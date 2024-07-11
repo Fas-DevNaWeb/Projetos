@@ -91,9 +91,29 @@ forn.addEventListener("submit", (event) => {
     ordrInfo.quantidadeAbacaxi = parseInt(qtdAbacaxi.innerText);
 
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
-  console.log(molhos);
-  if (molhos.length > 0) ordrInfo.molhos = molhos.length;
+    if (molhos.length > 0) ordrInfo.molhos = molhos.length;
 
+
+  const comentario = document.getElementById('coment');
+    ordrInfo.deixouComentario = comentario.value;
+  console.log( ordrInfo.deixouComentario );
   console.log(ordrInfo);
+
+  const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
+  const somaQtdLanche = ordrInfo.quantidadeLanche * 15;
+  const somaQtdLanchinho = ordrInfo.quantidadeLanchinho * 10;
+  const somaQtdOvoFrito = ordrInfo.quantidadeOvo * 1.5;
+  const somaQtdabacaxi = ordrInfo.quantidadeAbacaxi * 1;
+  const somaAcrescimoMolhos = ordrInfo.molhos * 2;
+  
+
+
+
+
+
+
+  const mostrarTela = document.querySelector('.ticket');
+  mostrarTela.style.display = 'block';
+  
 });
 
