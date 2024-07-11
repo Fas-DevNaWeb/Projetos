@@ -115,7 +115,49 @@ forn.addEventListener("submit", (event) => {
     const totalfinal = total + 2;
     console.log(totalfinal);
   }
+
   
+  const insertLi = document.getElementById('orderList');
+  const nomeUsuario = document.createElement('li');
+  nomeUsuario.innerText = `Nome: ${ordrInfo.nome}`;
+  insertLi.appendChild(nomeUsuario);
+  
+  const emailUsuario = document.createElement('li');
+  emailUsuario.innerText = `Email: ${ordrInfo.email}`;
+  insertLi.appendChild(emailUsuario);
+
+  if(qtdLanchao > 0){
+    const Lanchao = document.createElement('li');
+    Lanchao.innerText = `Lanchão: R$ ${somaQtdLanchao},00`;
+    insertLi.appendChild(Lanchao);
+  }
+
+  const Lanche = document.createElement('li');
+  Lanche.innerText = `Lanche: R$ ${somaQtdLanche},00`;
+  insertLi.appendChild(Lanche);
+ 
+  const Lanchinho = document.createElement('li');
+  Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho},00`;
+  insertLi.appendChild(Lanchinho);
+
+  const ovoFrito = document.createElement('li');
+  ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito}0`;
+  insertLi.appendChild(ovoFrito);
+
+  const abacaxi = document.createElement('li');
+  abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi},00`;
+  insertLi.appendChild(abacaxi);
+
+  const maisMolhos = document.createElement('li');
+  maisMolhos.innerText = `Molhos: R$ ${somaAcrescimoMolhos},00`;
+  insertLi.appendChild(maisMolhos);
+
+  const batata = document.createElement('li');
+  batata.innerText = `Batata Frita: R$ 2,00`;
+  insertLi.appendChild(batata);
+
+
+
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
   
