@@ -105,13 +105,17 @@ forn.addEventListener("submit", (event) => {
   const somaQtdOvoFrito = ordrInfo.quantidadeOvo * 1.5;
   const somaQtdabacaxi = ordrInfo.quantidadeAbacaxi * 1;
   const somaAcrescimoMolhos = ordrInfo.molhos * 2;
+
+  const total = somaQtdLanchao + somaQtdLanche + somaQtdLanchinho + somaQtdOvoFrito + somaQtdabacaxi + somaAcrescimoMolhos;
+
+  const batataFrita = document.querySelector('input[type="radio"]');
+  console.log(total);
+
+  if(batataFrita.checked){
+    const totalfinal = total + 2;
+    console.log(totalfinal);
+  }
   
-
-
-
-
-
-
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
   
