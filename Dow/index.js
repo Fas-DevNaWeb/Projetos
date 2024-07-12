@@ -97,7 +97,7 @@ forn.addEventListener("submit", (event) => {
   const comentario = document.getElementById('coment');
     ordrInfo.deixouComentario = comentario.value;
   console.log( ordrInfo.deixouComentario );
-  console.log(ordrInfo);
+  console.log(ordrInfo.molhos);
 
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
   const somaQtdLanche = ordrInfo.quantidadeLanche * 15;
@@ -110,9 +110,9 @@ forn.addEventListener("submit", (event) => {
 
   const batataFrita = document.querySelector('input[type="radio"]');
   console.log(total);
-
+ let totalfinal = 0;
   if(batataFrita.checked){
-    const totalfinal = total + 2;
+    totalfinal = total + 2;
     console.log(totalfinal);
   }
 
@@ -126,36 +126,51 @@ forn.addEventListener("submit", (event) => {
   emailUsuario.innerText = `Email: ${ordrInfo.email}`;
   insertLi.appendChild(emailUsuario);
 
-  if(qtdLanchao > 0){
+  if(qtdLanchao.innerText > 0){
     const Lanchao = document.createElement('li');
     Lanchao.innerText = `Lanchão: R$ ${somaQtdLanchao},00`;
     insertLi.appendChild(Lanchao);
   }
 
-  const Lanche = document.createElement('li');
-  Lanche.innerText = `Lanche: R$ ${somaQtdLanche},00`;
-  insertLi.appendChild(Lanche);
+  if(qtdLanche.innerText > 0 ){
+    const Lanche = document.createElement('li');
+    Lanche.innerText = `Lanche: R$ ${somaQtdLanche},00`;
+    insertLi.appendChild(Lanche);
+  }
+
+  if(qtdLanchinho.innerText > 0){
+    const Lanchinho = document.createElement('li');
+    Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho},00`;
+    insertLi.appendChild(Lanchinho);
+  }
+
+  if(qtdOvo.innerText > 0){
+    const ovoFrito = document.createElement('li');
+    ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito}0`;
+    insertLi.appendChild(ovoFrito);
+  }
+
+  if(qtdAbacaxi > 0){
+    const abacaxi = document.createElement('li');
+    abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi},00`;
+    insertLi.appendChild(abacaxi);
+  }
+
+  if(ordrInfo.molhos > 0){
+    const maisMolhos = document.createElement('li');
+    maisMolhos.innerText = `Molhos: R$ ${somaAcrescimoMolhos},00`;
+    insertLi.appendChild(maisMolhos);
+   }
+
+   if(batataFrita.checked){
+     const batata = document.createElement('li');
+     batata.innerText = `Batata Frita: R$ 2,00`;
+     insertLi.appendChild(batata);
+   }
  
-  const Lanchinho = document.createElement('li');
-  Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho},00`;
-  insertLi.appendChild(Lanchinho);
-
-  const ovoFrito = document.createElement('li');
-  ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito}0`;
-  insertLi.appendChild(ovoFrito);
-
-  const abacaxi = document.createElement('li');
-  abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi},00`;
-  insertLi.appendChild(abacaxi);
-
-  const maisMolhos = document.createElement('li');
-  maisMolhos.innerText = `Molhos: R$ ${somaAcrescimoMolhos},00`;
-  insertLi.appendChild(maisMolhos);
-
-  const batata = document.createElement('li');
-  batata.innerText = `Batata Frita: R$ 2,00`;
-  insertLi.appendChild(batata);
-
+   const totalf = document.createElement('li');
+   totalf.innerText = `Total : R$ ${totalfinal}`;
+   insertLi.appendChild(totalf);
 
 
   const mostrarTela = document.querySelector('.ticket');
