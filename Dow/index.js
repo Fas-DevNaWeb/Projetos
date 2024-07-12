@@ -128,37 +128,37 @@ forn.addEventListener("submit", (event) => {
 
   if(qtdLanchao.innerText > 0){
     const Lanchao = document.createElement('li');
-    Lanchao.innerText = `Lanchão: R$ ${somaQtdLanchao},00`;
+    Lanchao.innerText = `Lanchão: R$ ${somaQtdLanchao.toFixed(2)}`;
     insertLi.appendChild(Lanchao);
   }
 
   if(qtdLanche.innerText > 0 ){
     const Lanche = document.createElement('li');
-    Lanche.innerText = `Lanche: R$ ${somaQtdLanche},00`;
+    Lanche.innerText = `Lanche: R$ ${somaQtdLanche.toFixed(2)}`;
     insertLi.appendChild(Lanche);
   }
 
   if(qtdLanchinho.innerText > 0){
     const Lanchinho = document.createElement('li');
-    Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho},00`;
+    Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho.toFixed(2)}`;
     insertLi.appendChild(Lanchinho);
   }
 
   if(qtdOvo.innerText > 0){
     const ovoFrito = document.createElement('li');
-    ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito}0`;
+    ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito.toFixed(2)}`;
     insertLi.appendChild(ovoFrito);
   }
 
   if(qtdAbacaxi > 0){
     const abacaxi = document.createElement('li');
-    abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi},00`;
+    abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi.toFixed(2)}`;
     insertLi.appendChild(abacaxi);
   }
 
   if(ordrInfo.molhos > 0){
     const maisMolhos = document.createElement('li');
-    maisMolhos.innerText = `Molhos: R$ ${somaAcrescimoMolhos},00`;
+    maisMolhos.innerText = `Molhos: R$ ${somaAcrescimoMolhos.toFixed(2)}`;
     insertLi.appendChild(maisMolhos);
    }
 
@@ -169,7 +169,7 @@ forn.addEventListener("submit", (event) => {
    }
  
    const totalf = document.createElement('li');
-   totalf.innerText = `Total : R$ ${totalfinal}`;
+   totalf.innerText = `Total : R$ ${totalfinal.toFixed(2)}`;
    insertLi.appendChild(totalf);
 
 
