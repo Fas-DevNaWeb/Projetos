@@ -1,53 +1,18 @@
-/**
- * addEventListener(), é um método que adiciona um evento um escutador ao seu elemento
- * Isso indica que naquele ponto vai acontecer alguma ação,seja um click de um botão ou o mause
- * que passou por uma imagem e assim vai dependendo de qual ação você que usar.
- */
-
-/*
-No addEventListener(event,função), ele recebe dois parametros um e o tipo de evento,nesse caso
-quando ouver um submit no botão, o outro parametro é uma função que designa o que tem que ser feito 
-quando esse botão for acionado.
-
-OBS 1:Lembrese que quando o navegador executa o evento ele da um refresh na pagina e isso é muito rapido. 
-você não conseguirar ver o resultado, por isso você precisa passar um parametro na sua função o
-(event) é um evento que por sua vez possui um metodo chamado preventDefault(); que vai guardar essa 
-informação, de modo que você vai conseguir ver os resultados no browser.
-*/
-
-/*
-OBS 2: Você pode capturar elementos html de váriaas formas, por tag, por classe,por id ou por uma determinada 
-propriedade.
-A ideia é que quando você capitura esses elementos  eles ficam a sua disposição para ser manipulados.
-Ex: Você pode capiturar o valor contido num campo de texto por exemplo. 
-*/
-
-/**
-OBS: 3 Quando você cria um botão que esta sobre o evento de outro botão nesse caso no mesmo
-escopo, ele executa do mesmo geito se você não identifica-lo como um botão comum, se você não qué que ele
-aja como um executador você deve coloca-lo como type="button". Ou fazer uma expecificação no botão desejado.
- */
-
 const inputName = document.getElementById("name");
 const inputEmail = document.querySelector("#email");
 const forn = document.querySelector("form");
-
 const btnMenosLanchao = document.querySelector(".btn-menos-lanchao");
 const qtdLanchao = document.querySelector("#qtd-lanchao");
 const btnMaisLanchao = document.querySelector(".btn-mais-lanchao");
-
 const btnMenosLanche = document.querySelector(".btn-menos-lanche");
 const qtdLanche = document.querySelector("#qtd-lanche");
 const btnMaisLanche = document.querySelector(".btn-mais-lanche");
-
 const btnMenosLanchinho = document.querySelector(".btn-menos-lanchinho");
 const qtdLanchinho = document.querySelector("#qtd-lanchinho");
 const btnMaisLanchinho = document.querySelector(".btn-mais-lanchinho");
-
 const btnMenosOvo = document.querySelector(".btn-menos-ovo");
 const qtdOvo = document.querySelector("#qtd-ovo");
 const btnMaisOvo = document.querySelector(".btn-mais-ovo");
-
 const btnMenosAbacaxi = document.querySelector(".btn-menos-abacaxi");
 const qtdAbacaxi = document.querySelector("#qtd-abacaxi");
 const btnMaisAbacaxi = document.querySelector(".btn-mais-abacaxi");
@@ -73,7 +38,6 @@ quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
 
 forn.addEventListener("submit", (event) => {
   event.preventDefault();
-
   let ordrInfo = {};
   ordrInfo.nome = inputName.value;
   ordrInfo.email = inputEmail.value;
@@ -93,9 +57,6 @@ forn.addEventListener("submit", (event) => {
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
   if (molhos.length > 0) ordrInfo.molhos = molhos.length;
 
-
-
-
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
   const somaQtdLanche = ordrInfo.quantidadeLanche * 15;
   const somaQtdLanchinho = ordrInfo.quantidadeLanchinho * 10;
@@ -112,7 +73,6 @@ forn.addEventListener("submit", (event) => {
     totalfinal = total + 2;
     console.log(totalfinal);
   }
-
 
   const insertLi = document.getElementById('orderList');
   const nomeUsuario = document.createElement('li');
@@ -165,7 +125,6 @@ forn.addEventListener("submit", (event) => {
     insertLi.appendChild(batata);
   }
 
-
   const comentario = document.getElementById('coment').value;
   const comentarioUsuario = document.createElement('li');
   comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
@@ -186,11 +145,9 @@ forn.addEventListener("submit", (event) => {
     p.innerText = gerarNumeroPedido();
     pedido.appendChild(p);
   }
-
-  teste();
+  teste(); 
 
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
-
 });
 
