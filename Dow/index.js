@@ -188,7 +188,7 @@ forn.addEventListener("submit", (event) => {
   }
 
   teste();
-  
+
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
 
