@@ -464,3 +464,6 @@ textarea {
 sup{
     font-size: medium;
 }
+#ticket-number{
+    display: inline-table;
+}

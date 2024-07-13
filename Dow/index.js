@@ -72,7 +72,7 @@ quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
 
 
 forn.addEventListener("submit", (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
   let ordrInfo = {};
   ordrInfo.nome = inputName.value;
@@ -91,10 +91,10 @@ forn.addEventListener("submit", (event) => {
     ordrInfo.quantidadeAbacaxi = parseInt(qtdAbacaxi.innerText);
 
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
-    if (molhos.length > 0) ordrInfo.molhos = molhos.length;
+  if (molhos.length > 0) ordrInfo.molhos = molhos.length;
 
 
- 
+
 
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
   const somaQtdLanche = ordrInfo.quantidadeLanche * 15;
@@ -107,76 +107,90 @@ forn.addEventListener("submit", (event) => {
 
   const batataFrita = document.querySelector('input[type="radio"]');
   console.log(total);
- let totalfinal = 0;
-  if(batataFrita.checked){
+  let totalfinal = 0;
+  if (batataFrita.checked) {
     totalfinal = total + 2;
     console.log(totalfinal);
   }
 
-  
+
   const insertLi = document.getElementById('orderList');
   const nomeUsuario = document.createElement('li');
   nomeUsuario.innerText = `Nome: ${ordrInfo.nome}`;
   insertLi.appendChild(nomeUsuario);
-  
+
   const emailUsuario = document.createElement('li');
   emailUsuario.innerText = `Email: ${ordrInfo.email}`;
   insertLi.appendChild(emailUsuario);
 
-  if(qtdLanchao.innerText > 0){
+  if (qtdLanchao.innerText > 0) {
     const Lanchao = document.createElement('li');
     Lanchao.innerText = `Lanchão: R$ ${somaQtdLanchao.toFixed(2)}`;
     insertLi.appendChild(Lanchao);
   }
 
-  if(qtdLanche.innerText > 0 ){
+  if (qtdLanche.innerText > 0) {
     const Lanche = document.createElement('li');
     Lanche.innerText = `Lanche: R$ ${somaQtdLanche.toFixed(2)}`;
     insertLi.appendChild(Lanche);
   }
 
-  if(qtdLanchinho.innerText > 0){
+  if (qtdLanchinho.innerText > 0) {
     const Lanchinho = document.createElement('li');
     Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho.toFixed(2)}`;
     insertLi.appendChild(Lanchinho);
   }
 
-  if(qtdOvo.innerText > 0){
+  if (qtdOvo.innerText > 0) {
     const ovoFrito = document.createElement('li');
     ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito.toFixed(2)}`;
     insertLi.appendChild(ovoFrito);
   }
 
-  if(qtdAbacaxi > 0){
+  if (qtdAbacaxi > 0) {
     const abacaxi = document.createElement('li');
     abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi.toFixed(2)}`;
     insertLi.appendChild(abacaxi);
   }
 
-  if(ordrInfo.molhos > 0){
+  if (ordrInfo.molhos > 0) {
     const maisMolhos = document.createElement('li');
     maisMolhos.innerText = `Molhos: R$ ${somaAcrescimoMolhos.toFixed(2)}`;
     insertLi.appendChild(maisMolhos);
-   }
+  }
 
-   if(batataFrita.checked){
-     const batata = document.createElement('li');
-     batata.innerText = `Batata Frita: R$ 2,00`;
-     insertLi.appendChild(batata);
-   }
- 
-   
-   const comentario = document.getElementById('coment').value;
-   const comentarioUsuario = document.createElement('li');
-   comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
-   insertLi.appendChild(comentarioUsuario);
-   
-   const totalf = document.createElement('li');
-   totalf.innerText = `Total : R$ ${totalfinal.toFixed(2)}`;
-   insertLi.appendChild(totalf);
+  if (batataFrita.checked) {
+    const batata = document.createElement('li');
+    batata.innerText = `Batata Frita: R$ 2,00`;
+    insertLi.appendChild(batata);
+  }
 
+
+  const comentario = document.getElementById('coment').value;
+  const comentarioUsuario = document.createElement('li');
+  comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
+  insertLi.appendChild(comentarioUsuario);
+
+  const totalf = document.createElement('li');
+  totalf.innerText = `Total : R$ ${totalfinal.toFixed(2)}`;
+  insertLi.appendChild(totalf);
+
+  const gerarNumeroPedido = () => {
+    const numPedido = Math.floor(Math.random() * 101);
+    return numPedido;
+  }
+
+  const teste = () => {
+    const pedido = document.getElementById('ticket-number');
+    const p = document.createElement('p');
+    p.innerText = gerarNumeroPedido();
+    pedido.appendChild(p);
+  }
+
+  teste();
+  
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
-  
+
 });
 
