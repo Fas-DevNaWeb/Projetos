@@ -94,10 +94,7 @@ forn.addEventListener("submit", (event) => {
     if (molhos.length > 0) ordrInfo.molhos = molhos.length;
 
 
-  const comentario = document.getElementById('coment');
-    ordrInfo.deixouComentario = comentario.value;
-  console.log( ordrInfo.deixouComentario );
-  console.log(ordrInfo.molhos);
+ 
 
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
   const somaQtdLanche = ordrInfo.quantidadeLanche * 15;
@@ -168,10 +165,15 @@ forn.addEventListener("submit", (event) => {
      insertLi.appendChild(batata);
    }
  
+   
+   const comentario = document.getElementById('coment').value;
+   const comentarioUsuario = document.createElement('li');
+   comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
+   insertLi.appendChild(comentarioUsuario);
+   
    const totalf = document.createElement('li');
    totalf.innerText = `Total : R$ ${totalfinal.toFixed(2)}`;
    insertLi.appendChild(totalf);
-
 
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';

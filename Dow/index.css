@@ -460,3 +460,7 @@ textarea {
     margin-right: 40px;
     padding-top: 20px;
 }
+
+sup{
+    font-size: medium;
+}
