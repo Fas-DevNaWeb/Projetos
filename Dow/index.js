@@ -16,7 +16,7 @@ const btnMaisOvo = document.querySelector(".btn-mais-ovo");
 const btnMenosAbacaxi = document.querySelector(".btn-menos-abacaxi");
 const qtdAbacaxi = document.querySelector("#qtd-abacaxi");
 const btnMaisAbacaxi = document.querySelector(".btn-mais-abacaxi");
-
+const btnRecuperarDados = document.querySelector('.btn-recuperar');
 
 const quantidade = (menos, quantidade, mais) => {
   menos.addEventListener("click", () => {
@@ -38,8 +38,8 @@ quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
 
 
 const criarNotaFiscal = () => {  
-  let ordrInfo = {};
 
+  let ordrInfo = {};
   ordrInfo.nome = inputName.value;
   ordrInfo.email = inputEmail.value;
 
@@ -157,12 +157,15 @@ const criarNotaFiscal = () => {
   localStorage.setItem('nota',JSON.stringify(ordrInfo));
 };
   
+console.log(btnRecuperarDados);
 
+btnRecuperarDados.addEventListener('click',() => {
 
-
+})
 
 
 forn.addEventListener("submit", (event) => {
   event.preventDefault();
   criarNotaFiscal();
+  
 });
