@@ -37,7 +37,7 @@ quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
 
 
 
-const criarNotaFiscal = () => {  
+const criarNotaFiscal = () => {
 
   let ordrInfo = {};
   ordrInfo.nome = inputName.value;
@@ -57,7 +57,17 @@ const criarNotaFiscal = () => {
     ordrInfo.quantidadeAbacaxi = parseInt(qtdAbacaxi.innerText);
 
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
-  if (molhos.length > 0) ordrInfo.molhos = molhos.length;
+  if (molhos.length > 0) {
+    ordrInfo.molhos = molhos.length;
+
+    itensArray = [];
+    itensArray = molhos.forEach((item) => {
+      itensArray.push(item.id);
+      ordrInfo.todosMolhos = itensArray;
+      console.log(itensArray);
+    })
+
+  }
 
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
   const somaQtdLanche = ordrInfo.quantidadeLanche * 15;
@@ -154,18 +164,63 @@ const criarNotaFiscal = () => {
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
 
-  localStorage.setItem('nota',JSON.stringify(ordrInfo));
+  localStorage.setItem('nota', JSON.stringify(ordrInfo));
 };
-  
-console.log(btnRecuperarDados);
 
-btnRecuperarDados.addEventListener('click',() => {
+btnRecuperarDados.addEventListener('click', () => {
+  //criarNotaFiscal().innerHTML = '';
+  const objRecuperadoString = localStorage.getItem('nota');
+  const novoObjeto = JSON.parse(objRecuperadoString);
 
-})
+  inputName.value = novoObjeto.nome;
+  inputEmail.value = novoObjeto.email;
+  qtdLanchao.innerText = novoObjeto.quantidadeLanchao;
+  qtdLanche.innerText = novoObjeto.quantidadeLanche;
+  qtdLanchinho.innerText = novoObjeto.quantidadeLanchinho;
+
+  qtdOvo.innerText = novoObjeto.quantidadeOvo;
+  qtdAbacaxi.innerText = novoObjeto.quantidadeAbacaxi;
+
+
+
+
+
+
+  const mMadeira = document.getElementById('molho-madeira');
+  if( mMadeira.id ===  novoObjeto.todosMolhos[0] || mMadeira.id ===  novoObjeto.todosMolhos[2] || mMadeira.id ===  novoObjeto.todosMolhos[2] || mMadeira.id ===  novoObjeto.todosMolhos[3]){
+    mMadeira.checked = true;
+  }
+
+  const mBarbecue = document.getElementById('molho-barbecue');
+  if(mBarbecue.id === novoObjeto.todosMolhos[0] || mBarbecue.id === novoObjeto.todosMolhos[1] || mBarbecue.id === novoObjeto.todosMolhos[2] || mBarbecue.id === novoObjeto.todosMolhos[3]){
+    mBarbecue.checked = true;
+  }
+
+  const mMolhoCasa = document.getElementById('molho-casa');
+  if(mMolhoCasa.id === novoObjeto.todosMolhos[0] || mMolhoCasa.id === novoObjeto.todosMolhos[1] || mMolhoCasa.id === novoObjeto.todosMolhos[2] || mMolhoCasa.id === novoObjeto.todosMolhos[3]){
+    mMolhoCasa.checked = true;
+  }
+
+  const mAlecrimDourado = document.getElementById('alecrim-dourado');
+  if(mAlecrimDourado.id === novoObjeto.todosMolhos[0] || mAlecrimDourado.id === novoObjeto.todosMolhos[1] || mAlecrimDourado.id === novoObjeto.todosMolhos[2] || mAlecrimDourado.id === novoObjeto.todosMolhos[3]){
+    mAlecrimDourado.checked = true;
+  }
+
+  if (novoObjeto.batataFritissima === 2) {
+    const batataFrita = document.getElementById('sim');
+    batataFrita.checked = true;
+  }
+
+  const comentariorecuperado = document.getElementById('coment');
+  comentariorecuperado.value = novoObjeto.comentarioUsu;
+
+  console.log(novoObjeto);
+});
+
 
 
 forn.addEventListener("submit", (event) => {
   event.preventDefault();
   criarNotaFiscal();
-  
+
 });
