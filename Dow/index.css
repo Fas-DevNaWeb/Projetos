@@ -467,3 +467,10 @@ sup {
 #ticket-number {
   display: inline-table;
 }
+
+.estiloTotal {
+  color:#000;
+  margin-left: 175px;
+  font-weight: bold;
+  font-size: larger;
+}

@@ -36,9 +36,10 @@ quantidade(btnMenosOvo, qtdOvo, btnMaisOvo);
 quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
 
 
-forn.addEventListener("submit", (event) => {
-  event.preventDefault();
+
+const criarNotaFiscal = () => {  
   let ordrInfo = {};
+
   ordrInfo.nome = inputName.value;
   ordrInfo.email = inputEmail.value;
 
@@ -51,7 +52,8 @@ forn.addEventListener("submit", (event) => {
 
   if (qtdOvo.innerText != 0)
     ordrInfo.quantidadeOvo = parseInt(qtdOvo.innerText);
-  if (qtdOvo.innerText != 0)
+
+  if (qtdAbacaxi.innerText != 0)
     ordrInfo.quantidadeAbacaxi = parseInt(qtdAbacaxi.innerText);
 
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
@@ -67,11 +69,10 @@ forn.addEventListener("submit", (event) => {
   const total = somaQtdLanchao + somaQtdLanche + somaQtdLanchinho + somaQtdOvoFrito + somaQtdabacaxi + somaAcrescimoMolhos;
 
   const batataFrita = document.querySelector('input[type="radio"]');
-  console.log(total);
   let totalfinal = 0;
   if (batataFrita.checked) {
     totalfinal = total + 2;
-    console.log(totalfinal);
+    ordrInfo.batataFritissima = 2;
   }
 
   const insertLi = document.getElementById('orderList');
@@ -107,7 +108,7 @@ forn.addEventListener("submit", (event) => {
     insertLi.appendChild(ovoFrito);
   }
 
-  if (qtdAbacaxi > 0) {
+  if (qtdAbacaxi.innerText > 0) {
     const abacaxi = document.createElement('li');
     abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi.toFixed(2)}`;
     insertLi.appendChild(abacaxi);
@@ -129,8 +130,10 @@ forn.addEventListener("submit", (event) => {
   const comentarioUsuario = document.createElement('li');
   comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
   insertLi.appendChild(comentarioUsuario);
+  ordrInfo.comentarioUsu = comentario;
 
   const totalf = document.createElement('li');
+  totalf.className = 'estiloTotal';
   totalf.innerText = `Total : R$ ${totalfinal.toFixed(2)}`;
   insertLi.appendChild(totalf);
 
@@ -144,10 +147,22 @@ forn.addEventListener("submit", (event) => {
     const p = document.createElement('p');
     p.innerText = gerarNumeroPedido();
     pedido.appendChild(p);
+    ordrInfo.Id = parseInt(p.innerText);
   }
-  teste(); 
+  teste();
 
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
-});
 
+  localStorage.setItem('nota',JSON.stringify(ordrInfo));
+};
+  
+
+
+
+
+
+forn.addEventListener("submit", (event) => {
+  event.preventDefault();
+  criarNotaFiscal();
+});
