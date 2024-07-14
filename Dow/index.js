@@ -29,13 +29,12 @@ const quantidade = (menos, quantidade, mais) => {
     quantidade.innerText = parseInt(quantidade.innerText) + 1;
   });
 };
+
 quantidade(btnMenosLanchao, qtdLanchao, btnMaisLanchao);
 quantidade(btnMenosLanche, qtdLanche, btnMaisLanche);
 quantidade(btnMenosLanchinho, qtdLanchinho, btnMaisLanchinho);
 quantidade(btnMenosOvo, qtdOvo, btnMaisOvo);
 quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
-
-
 
 const criarNotaFiscal = () => {
 
@@ -64,7 +63,6 @@ const criarNotaFiscal = () => {
     itensArray = molhos.forEach((item) => {
       itensArray.push(item.id);
       ordrInfo.todosMolhos = itensArray;
-      console.log(itensArray);
     })
 
   }
@@ -168,7 +166,7 @@ const criarNotaFiscal = () => {
 };
 
 btnRecuperarDados.addEventListener('click', () => {
-  //criarNotaFiscal().innerHTML = '';
+
   const objRecuperadoString = localStorage.getItem('nota');
   const novoObjeto = JSON.parse(objRecuperadoString);
 
@@ -180,11 +178,6 @@ btnRecuperarDados.addEventListener('click', () => {
 
   qtdOvo.innerText = novoObjeto.quantidadeOvo;
   qtdAbacaxi.innerText = novoObjeto.quantidadeAbacaxi;
-
-
-
-
-
 
   const mMadeira = document.getElementById('molho-madeira');
   if( mMadeira.id ===  novoObjeto.todosMolhos[0] || mMadeira.id ===  novoObjeto.todosMolhos[2] || mMadeira.id ===  novoObjeto.todosMolhos[2] || mMadeira.id ===  novoObjeto.todosMolhos[3]){
@@ -213,14 +206,9 @@ btnRecuperarDados.addEventListener('click', () => {
 
   const comentariorecuperado = document.getElementById('coment');
   comentariorecuperado.value = novoObjeto.comentarioUsu;
-
-  console.log(novoObjeto);
 });
-
-
 
 forn.addEventListener("submit", (event) => {
   event.preventDefault();
   criarNotaFiscal();
-
 });
