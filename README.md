@@ -11,6 +11,7 @@
 
 [(Spotify-CSS)](https://github.com/Fas-DevNaWeb/Projetos-Trybe/blob/main/Page-Spotify/css/spotify.css "Pagina-(Spotify-CSS)")
 
+<a href="https://spotify-delta-seven.vercel.app/">Ver pagina </a>
 <hr>
 
 <h3>Projeto Fas - Lanches</h3>  
@@ -21,5 +22,5 @@
 
 [(Fas-Lanches-JS)](https://github.com/Fas-DevNaWeb/Projetos-Trybe/blob/main/Dow/index.js "(Fas-Lanches-Js)")
 
-<a href="https://spotify-delta-seven.vercel.app/">Ver pagina </a>
+
 </html>
