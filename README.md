@@ -6,10 +6,10 @@
 
 ### Exercícios Desenvolvidos ###
 <h3>Projeto Spotify</h3>  
-<a href="https://spotify-delta-seven.vercel.app/">Ver pagina </a>
+<a href="https://spotify-delta-seven.vercel.app/">Visitar Pagina </a>
 
 <hr>
 
-<h3>Projeto Fas - Lanches</h3>  
-<a href="https://gustosao-lanches.vercel.app/">Ver Projeto</a>
+<h3>Projeto Gus - Lanches</h3>  
+<a href="https://gustosao-lanches.vercel.app/">Visitar Projeto</a>
 </html>
