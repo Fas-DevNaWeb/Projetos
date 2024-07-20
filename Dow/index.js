@@ -39,32 +39,56 @@ quantidade(btnMenosAbacaxi, qtdAbacaxi, btnMaisAbacaxi);
 const criarNotaFiscal = () => {
 
   let ordrInfo = {};
+
   ordrInfo.nome = inputName.value;
   ordrInfo.email = inputEmail.value;
 
-  if (qtdLanchao.innerText != 0)
+  if (qtdLanchao.innerText != 0) {
     ordrInfo.quantidadeLanchao = parseInt(qtdLanchao.innerText);
-  if (qtdLanche.innerText != 0)
+  } else {
+    ordrInfo.quantidadeLanchao = 0;
+  }
+
+  if (qtdLanche.innerText != 0) {
     ordrInfo.quantidadeLanche = parseInt(qtdLanche.innerText);
-  if (qtdLanchinho.innerText != 0)
+  } else {
+    ordrInfo.quantidadeLanche = 0;
+  }
+
+  if (qtdLanchinho.innerText != 0) {
     ordrInfo.quantidadeLanchinho = parseInt(qtdLanchinho.innerText);
+  } else {
+    ordrInfo.quantidadeLanchinho = 0;
+  }
 
-  if (qtdOvo.innerText != 0)
+  if (qtdOvo.innerText != 0) {
     ordrInfo.quantidadeOvo = parseInt(qtdOvo.innerText);
+  } else {
+    ordrInfo.quantidadeOvo = 0;
+  }
 
-  if (qtdAbacaxi.innerText != 0)
+  if (qtdAbacaxi.innerText != 0) {
     ordrInfo.quantidadeAbacaxi = parseInt(qtdAbacaxi.innerText);
+  } else {
+    ordrInfo.quantidadeAbacaxi = 0;
+  }
 
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
   if (molhos.length > 0) {
     ordrInfo.molhos = molhos.length;
 
     itensArray = [];
-    itensArray = molhos.forEach((item) => {
+    molhos.forEach((item) => {
       itensArray.push(item.id);
       ordrInfo.todosMolhos = itensArray;
     })
+  } else {
+    ordrInfo.molhos = 0;
+  }
 
+  const batataFrita = document.querySelector('input[type="radio"]');
+  if (batataFrita.checked) {
+    ordrInfo.batataFritissima = 2;
   }
 
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
@@ -74,14 +98,6 @@ const criarNotaFiscal = () => {
   const somaQtdabacaxi = ordrInfo.quantidadeAbacaxi * 1;
   const somaAcrescimoMolhos = ordrInfo.molhos * 2;
 
-  const total = somaQtdLanchao + somaQtdLanche + somaQtdLanchinho + somaQtdOvoFrito + somaQtdabacaxi + somaAcrescimoMolhos;
-
-  const batataFrita = document.querySelector('input[type="radio"]');
-  let totalfinal = 0;
-  if (batataFrita.checked) {
-    totalfinal = total + 2;
-    ordrInfo.batataFritissima = 2;
-  }
 
   const insertLi = document.getElementById('orderList');
   const nomeUsuario = document.createElement('li');
@@ -130,19 +146,27 @@ const criarNotaFiscal = () => {
 
   if (batataFrita.checked) {
     const batata = document.createElement('li');
-    batata.innerText = `Batata Frita: R$ 2,00`;
+    batata.innerText = `Batata Frita: R$ 2,00`
     insertLi.appendChild(batata);
   }
 
   const comentario = document.getElementById('coment').value;
-  const comentarioUsuario = document.createElement('li');
-  comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
-  insertLi.appendChild(comentarioUsuario);
-  ordrInfo.comentarioUsu = comentario;
+  if (comentario !== '') {
+    const comentarioUsuario = document.createElement('li');
+    comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
+    insertLi.appendChild(comentarioUsuario);
+    ordrInfo.comentarioUsu = comentario;
+  }
+
+  let total = (somaQtdLanchao + somaQtdLanche + somaQtdLanchinho + somaQtdOvoFrito + somaQtdabacaxi + somaAcrescimoMolhos);
+
+  if (batataFrita.checked) {
+    total += 2;
+  }
 
   const totalf = document.createElement('li');
   totalf.className = 'estiloTotal';
-  totalf.innerText = `Total : R$ ${totalfinal.toFixed(2)}`;
+  totalf.innerText = `Total : R$ ${total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`;
   insertLi.appendChild(totalf);
 
   const gerarNumeroPedido = () => {
@@ -150,14 +174,14 @@ const criarNotaFiscal = () => {
     return numPedido;
   }
 
-  const teste = () => {
+  const gerarPedido = () => {
     const pedido = document.getElementById('ticket-number');
     const p = document.createElement('p');
     p.innerText = gerarNumeroPedido();
     pedido.appendChild(p);
     ordrInfo.Id = parseInt(p.innerText);
   }
-  teste();
+  gerarPedido();
 
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
@@ -180,22 +204,22 @@ btnRecuperarDados.addEventListener('click', () => {
   qtdAbacaxi.innerText = novoObjeto.quantidadeAbacaxi;
 
   const mMadeira = document.getElementById('molho-madeira');
-  if( mMadeira.id ===  novoObjeto.todosMolhos[0] || mMadeira.id ===  novoObjeto.todosMolhos[2] || mMadeira.id ===  novoObjeto.todosMolhos[2] || mMadeira.id ===  novoObjeto.todosMolhos[3]){
+  if (mMadeira.id === novoObjeto.todosMolhos[0] || mMadeira.id === novoObjeto.todosMolhos[2] || mMadeira.id === novoObjeto.todosMolhos[2] || mMadeira.id === novoObjeto.todosMolhos[3]) {
     mMadeira.checked = true;
   }
 
   const mBarbecue = document.getElementById('molho-barbecue');
-  if(mBarbecue.id === novoObjeto.todosMolhos[0] || mBarbecue.id === novoObjeto.todosMolhos[1] || mBarbecue.id === novoObjeto.todosMolhos[2] || mBarbecue.id === novoObjeto.todosMolhos[3]){
+  if (mBarbecue.id === novoObjeto.todosMolhos[0] || mBarbecue.id === novoObjeto.todosMolhos[1] || mBarbecue.id === novoObjeto.todosMolhos[2] || mBarbecue.id === novoObjeto.todosMolhos[3]) {
     mBarbecue.checked = true;
   }
 
   const mMolhoCasa = document.getElementById('molho-casa');
-  if(mMolhoCasa.id === novoObjeto.todosMolhos[0] || mMolhoCasa.id === novoObjeto.todosMolhos[1] || mMolhoCasa.id === novoObjeto.todosMolhos[2] || mMolhoCasa.id === novoObjeto.todosMolhos[3]){
+  if (mMolhoCasa.id === novoObjeto.todosMolhos[0] || mMolhoCasa.id === novoObjeto.todosMolhos[1] || mMolhoCasa.id === novoObjeto.todosMolhos[2] || mMolhoCasa.id === novoObjeto.todosMolhos[3]) {
     mMolhoCasa.checked = true;
   }
 
   const mAlecrimDourado = document.getElementById('alecrim-dourado');
-  if(mAlecrimDourado.id === novoObjeto.todosMolhos[0] || mAlecrimDourado.id === novoObjeto.todosMolhos[1] || mAlecrimDourado.id === novoObjeto.todosMolhos[2] || mAlecrimDourado.id === novoObjeto.todosMolhos[3]){
+  if (mAlecrimDourado.id === novoObjeto.todosMolhos[0] || mAlecrimDourado.id === novoObjeto.todosMolhos[1] || mAlecrimDourado.id === novoObjeto.todosMolhos[2] || mAlecrimDourado.id === novoObjeto.todosMolhos[3]) {
     mAlecrimDourado.checked = true;
   }
 
