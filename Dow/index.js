@@ -130,35 +130,35 @@ const criarObjNotaFiscal = () => {
     const Lanchao = document.createElement('li');
     Lanchao.innerText = `Lanchão: R$ ${somaQtdLanchao.toFixed(2)}`;
     insertLi.appendChild(Lanchao);
-    //qtdLanchao.innerText = 0;
+    qtdLanchao.innerText = 0;
   }
 
   if (qtdLanche.innerText > 0) {
     const Lanche = document.createElement('li');
     Lanche.innerText = `Lanche: R$ ${somaQtdLanche.toFixed(2)}`;
     insertLi.appendChild(Lanche);
-    //qtdLanche.innerText = 0;
+    qtdLanche.innerText = 0;
   }
 
   if (qtdLanchinho.innerText > 0) {
     const Lanchinho = document.createElement('li');
     Lanchinho.innerText = `Lanchinho: R$ ${somaQtdLanchinho.toFixed(2)}`;
     insertLi.appendChild(Lanchinho);
-    //qtdLanchinho.innerText = 0;
+    qtdLanchinho.innerText = 0;
   }
 
   if (qtdOvo.innerText > 0) {
     const ovoFrito = document.createElement('li');
     ovoFrito.innerText = `Ovos: R$ ${somaQtdOvoFrito.toFixed(2)}`;
     insertLi.appendChild(ovoFrito);
-    //qtdOvo.innerText = 0;
+    qtdOvo.innerText = 0;
   }
 
   if (qtdAbacaxi.innerText > 0) {
     const abacaxi = document.createElement('li');
     abacaxi.innerText = `Abacaxi: R$ ${somaQtdabacaxi.toFixed(2)}`;
     insertLi.appendChild(abacaxi);
-    //qtdAbacaxi.innerText = 0;
+    qtdAbacaxi.innerText = 0;
   }
 
   if (ordrInfo.molhos > 0) {
@@ -173,7 +173,7 @@ const criarObjNotaFiscal = () => {
     batata.innerText = `Batata Frita: R$ 2,00`
     insertLi.appendChild(batata);
     const naoBatata = document.getElementById('nao');
-    //naoBatata.checked = true;
+    naoBatata.checked = true;
   }
 
   const comentario = document.getElementById('coment').value;
@@ -182,7 +182,7 @@ const criarObjNotaFiscal = () => {
     comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
     insertLi.appendChild(comentarioUsuario);
     ordrInfo.comentarioUsu = comentario;
-    //comentario.value = '';
+    comentario.value = '';
   }
 
   let total = (somaQtdLanchao + somaQtdLanche + somaQtdLanchinho + somaQtdOvoFrito + somaQtdabacaxi + somaAcrescimoMolhos);
