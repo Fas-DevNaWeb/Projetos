@@ -1,3 +1,4 @@
+/*
 localStorage é um objeto que serve para armazenar dados no seu computador.
 Sempre que você quizer criar um par de chave valor no localStorage você utiliza o método setItem('chave','valor');
 Sempre que você quizer recuperar algo do localStorage você utiliza o método getItem('chave');
@@ -9,3 +10,16 @@ JSON transforma uma String em um objeto ou Array, usando o método parse();.
 Exemplo -> JSON.parse('fas');
 
 JSON possui outros métodos por exemplo o método stringify([1,2,3,4]); que transforma um array em uma string.
+*/
+
+var atual = 600000.00;
+
+//com R$
+var f = atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+//sem R$
+var f2 = atual.toLocaleString('pt-br', {minimumFractionDigits: 2});
+
+console.log(f);
+console.log(f2);
+v
