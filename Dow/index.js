@@ -87,7 +87,7 @@ const criarObjNotaFiscal = () => {
     ordrInfo.molhos = 0;
   }
 
-   //const batataFrita = document.querySelector('input[type="radio"]');
+  //const batataFrita = document.querySelector('input[type="radio"]');
   const batataFrita = document.querySelector('#sim');
   if (batataFrita.checked) {
     ordrInfo.batataFritissima = 2;
@@ -100,17 +100,31 @@ const criarObjNotaFiscal = () => {
   const somaQtdabacaxi = ordrInfo.quantidadeAbacaxi * 1;
   const somaAcrescimoMolhos = ordrInfo.molhos * 2;
 
+  const gerarNumeroPedido = () => {
+    const numPedido = Math.floor(Math.random() * 101);
+    return numPedido;
+  }
+
+  const gerarPedido = () => {
+    const pedido = document.getElementById('ticket-number');
+    pedido.innerText = gerarNumeroPedido();
+    ordrInfo.Id = parseInt(pedido.innerText);
+
+  }
+  gerarPedido();
+
+
 
   //const insertLi = document.getElementById('orderList');
   const nomeUsuario = document.createElement('li');
   nomeUsuario.innerText = `Nome: ${ordrInfo.nome}`;
   insertLi.appendChild(nomeUsuario);
-  //inputName.value = '';
+  inputName.value = '';
 
   const emailUsuario = document.createElement('li');
   emailUsuario.innerText = `Email: ${ordrInfo.email}`;
   insertLi.appendChild(emailUsuario);
-  //inputEmail.value = '';
+  inputEmail.value = '';
 
   if (qtdLanchao.innerText > 0) {
     const Lanchao = document.createElement('li');
@@ -182,23 +196,13 @@ const criarObjNotaFiscal = () => {
   totalf.innerText = `Total : R$ ${total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`;
   insertLi.appendChild(totalf);
 
-  const gerarNumeroPedido = () => {
-    const numPedido = Math.floor(Math.random() * 101);
-    return numPedido;
-  }
 
-  /*const gerarPedido = () => {
-    const pedido = document.getElementById('ticket-number');
-    const p = document.createElement('p');
-    p.innerText = gerarNumeroPedido();
-    pedido.appendChild(p);
-    ordrInfo.Id = parseInt(p.innerText);
-  }
-  gerarPedido();
-*/
+
+
+
   const mostrarTela = document.querySelector('.ticket');
   mostrarTela.style.display = 'block';
-  
+
   localStorage.setItem('nota', JSON.stringify(ordrInfo));
 };
 
