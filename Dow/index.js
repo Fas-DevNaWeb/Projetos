@@ -95,6 +95,8 @@ const criarObjNotaFiscal = () => {
   const batataFrita = document.querySelector('#sim');
   if (batataFrita.checked) {
     ordrInfo.batataFritissima = 2;
+  }else{
+    ordrInfo.batataFritissima = 0;
   }
 
   const somaQtdLanchao = ordrInfo.quantidadeLanchao * 20;
@@ -120,9 +122,6 @@ const criarObjNotaFiscal = () => {
   } 
  
   gerarPedido();
-
- 
-
 
   const nomeUsuario = document.createElement('li');
   nomeUsuario.innerText = `Nome: ${ordrInfo.nome}`;
@@ -194,10 +193,10 @@ const criarObjNotaFiscal = () => {
   }
 
   let total = (somaQtdLanchao + somaQtdLanche + somaQtdLanchinho + somaQtdOvoFrito + somaQtdabacaxi + somaAcrescimoMolhos);
-
-  if (batataFrita.checked) {
-    total += 2;
-  }
+console.log(ordrInfo.batataFritissima);
+ 
+    total += ordrInfo.batataFritissima;
+    
 
   const totalf = document.createElement('li');
   totalf.className = 'estiloTotal';
@@ -212,6 +211,8 @@ const criarObjNotaFiscal = () => {
   mostrarTela.style.display = 'block';
 
   localStorage.setItem('nota', JSON.stringify(ordrInfo));
+  inputName.focus();
+  
 };
 
 btnRecuperarDados.addEventListener('click', () => {
