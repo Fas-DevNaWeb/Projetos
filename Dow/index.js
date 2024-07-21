@@ -83,6 +83,10 @@ const criarObjNotaFiscal = () => {
       itensArray.push(item.id);
       ordrInfo.todosMolhos = itensArray;
     })
+    molhos.forEach((item) => {
+      item.checked = false;
+    })
+  console.log(molhos);
   } else {
     ordrInfo.molhos = 0;
   }
@@ -110,12 +114,16 @@ const criarObjNotaFiscal = () => {
     pedido.innerText = gerarNumeroPedido();
     ordrInfo.Id = parseInt(pedido.innerText);
 
-  }
+    const idPedido = document.createElement('li');
+    idPedido.innerText = `ID: ${pedido.innerText}`;  
+    insertLi.appendChild(idPedido);
+  } 
+ 
   gerarPedido();
 
+ 
 
 
-  //const insertLi = document.getElementById('orderList');
   const nomeUsuario = document.createElement('li');
   nomeUsuario.innerText = `Nome: ${ordrInfo.nome}`;
   insertLi.appendChild(nomeUsuario);
@@ -176,12 +184,12 @@ const criarObjNotaFiscal = () => {
     naoBatata.checked = true;
   }
 
-  const comentario = document.getElementById('coment').value;
-  if (comentario !== '') {
+  const comentario = document.getElementById('coment');
+  if (comentario.value !== '') {
     const comentarioUsuario = document.createElement('li');
-    comentarioUsuario.innerText = `Algum Comentário: ${comentario}`;
+    comentarioUsuario.innerText = `Algum Comentário: ${comentario.value}`;
     insertLi.appendChild(comentarioUsuario);
-    ordrInfo.comentarioUsu = comentario;
+    ordrInfo.comentarioUsu = comentario.value;
     comentario.value = '';
   }
 
