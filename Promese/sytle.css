@@ -3,7 +3,7 @@ body{
 }
 
 .container-pai{
-    background-image: url('/Promese/img/06264d092010e5c80cff3fc62afed3df.jpg');
+   /* background-image: url('/Promese/img/06264d092010e5c80cff3fc62afed3df.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 250px;

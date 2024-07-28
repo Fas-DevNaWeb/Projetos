@@ -1,0 +1,68 @@
+body {
+  margin: 5% 28%;
+  background-color:white;
+}
+
+.container {
+  width: 628px;
+  height: 450px;
+  background-color: black;
+  border-radius: 21px;
+  color: #f8f7f8;
+  background-image: url("./img/photocall-de-jogos-de-neon-desenhado-a-mao_23-2149860761.avif");
+  padding-top: 83px;
+}
+
+h1 {
+  color: #a02c96;
+  text-align: center;
+  font-size: 27px;
+  margin-right: 5px;
+}
+
+p {
+    text-align: center;
+    margin-right: 10px;
+    margin-right: 20px;
+    color: rgb(247, 247, 247);
+}
+
+.msg{
+    text-align: center;
+    margin-right: 10px;
+    margin-right: 20px;
+    color: red;  
+}
+.inserir-num {
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  height: 60px;
+  border-color: #a02c96;
+  font-size: 50px;
+  text-align: center;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+button {
+  width: 149px;
+  height: 32px;
+  background-color: #a02c96;
+  border-radius: 5px;
+  margin-top: -12px;
+  border-color: lavender;
+  color: white;
+  font-weight: bold;
+}
+
+.estilo-acertou-errou {
+  width: 200px;
+  height: 132px;
+  margin-left: 221px;
+  margin-top: 16px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
