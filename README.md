@@ -17,5 +17,5 @@
 <hr>
 
 <h3>Projeto Jogo - Número Secreto</h3>  
-<a href="https://jogo-numero-secreto-navy-eight.vercel.app/">Bora Jogar</a>
+<a href="https://numero-secreto-six-swart.vercel.app/">Bora Jogar</a>
 </html>
