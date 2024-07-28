@@ -13,3 +13,9 @@
 <h3>Projeto Gus - Lanches</h3>  
 <a href="https://gustosao-lanches.vercel.app/">Visitar Projeto</a>
 </html>
+
+<hr>
+
+<h3>Projeto Jogo - Número Secreto</h3>  
+<a href="https://jogo-numero-secreto-navy-eight.vercel.app/">Bora Jogar</a>
+</html>
