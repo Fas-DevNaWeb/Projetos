@@ -46,29 +46,29 @@ btnChutar.addEventListener("click", () => {
     inputNumber.value = "";
   } else {
     if (inputNumber.value > numAleatorio) {
-      const img = document.createElement("img");
-      img.classList.add("estilo-acertou-errou");
-      img.src = "./img/errou4.gif";
-      acertouErrou.appendChild(img);
+      //const img = document.createElement("img");
+      //img.classList.add("estilo-acertou-errou");
+      //img.src = "./img/errou4.gif";
+      //acertouErrou.appendChild(img);
       mensagem.innerText = "O número secreto é Menor,tente novamente!";
       inputNumber.value = '';
       contador++;
     } 
     else if (inputNumber.value < numAleatorio) {
-      const img = document.createElement("img");
-      img.classList.add("estilo-acertou-errou");
-      img.src = "./img/errou4.gif";
-      acertouErrou.appendChild(img);
+      //const img = document.createElement("img");
+      //img.classList.add("estilo-acertou-errou");
+      //img.src = "./img/errou4.gif";
+      //acertouErrou.appendChild(img);
       mensagem.innerText = "O número secreto é Maior,tente novamente!";
       inputNumber.value = '';
       contador++;
     } 
     else if(parseInt(inputNumber.value) === numAleatorio) {
-      const img = document.createElement("img");
-      img.classList.add("estilo-acertou-errou");
-      img.src = "./img/acertou.jpeg";
-      acertouErrou.appendChild(img);
-      mensagem.innerText = `Acertou Miserável!! - Com ${contador} Tentativas`;
+      //const img = document.createElement("img");
+      //img.classList.add("estilo-acertou-errou");
+      //img.src = "./img/t.webp";
+      //acertouErrou.appendChild(img);
+      mensagem.innerText = `Acertou !!! - Com ${contador} Tentativas`;
       inputNumber.value = '';
       exibirConfet();
     }
