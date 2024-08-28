@@ -5,11 +5,6 @@
  <img src="projetos.jpg" alt="logo">
 
 ### Exercícios Desenvolvidos ###
-<h3>Projeto Spotify</h3>  
-<a href="https://spotify-delta-seven.vercel.app/">Visitar Pagina </a>
-
-<hr>
-
 <h3>Projeto Gus - Lanches</h3>  
 <a href="https://projetos-black-eight.vercel.app/">Visitar Projeto</a>
 </html>
@@ -26,7 +21,7 @@
 
 <hr>
 
-<h3>Projeto Decodificador</h3>  
+<h3>Projeto Spotify</h3>  
 <a href="https://projetos-okcc.vercel.app/">Visitar Projeto</a>
 
 </html>
