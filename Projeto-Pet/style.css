@@ -2,3 +2,23 @@
     margin: 0;
     padding: 0;
 }
+
+#container-pet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; ;
+}
+
+.titulo-pet{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.get-dog,.get-cat,.get-surprise{
+    margin-right: 10px;
+    width: 150px;
+    height: 30px;
+    background-color:darkslategrey;
+    color: white;
+}
