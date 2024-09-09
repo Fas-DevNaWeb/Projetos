@@ -35,6 +35,7 @@ const buscaAleatoria = () => {
     todasPromesas.push(promeseResolveDog);
     todasPromesas.push(promeseResolveCat);
 
+    //sempre que precisar buscar informação sobre Promese.any(); como utilizar.
     Promise.any(todasPromesas).then((value) => {
     value.json().then((data) =>  (data.message)? img__pet.src = data.message : img__pet.src = data[0].url)
     })
