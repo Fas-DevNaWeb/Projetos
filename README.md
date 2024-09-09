@@ -1,7 +1,7 @@
 # Projetos
 
 <html>
- <h2 style="Color:red">Meus projetos desenvolvidos - 2024</h2> 
+ <h2 style="Color:red">Meus Exercicios desenvolvidos - 2024</h2> 
  <img src="projetos.jpg" alt="logo">
 
 ### Exercícios Desenvolvidos ###
@@ -22,6 +22,11 @@
 <hr>
 
 <h3>Projeto Spotify</h3>  
+<a href="https://projetos-okcc.vercel.app/">Visitar Projeto</a>
+
+<hr>
+
+<h3>Projeto Selecionando Pet - Promese</h3>  
 <a href="https://projetos-okcc.vercel.app/">Visitar Projeto</a>
 
 </html>
