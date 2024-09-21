@@ -1,0 +1,28 @@
+.banner__blog--img {
+  width: 1440px;
+  height: 500px;
+  background-image: url('../img/Banner Blog.png');
+}
+
+.banner__blog {
+  width: 580px;
+  height: 303px;
+}
+
+.banner__blog--titulo {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+.banner__blog--sublinhado {
+  width: 150px;
+  height: 5px;
+  border: 1px solid;
+  border-color: var(--vermelho);
+  background-color: var(--vermelho);
+}
+
+.banner__blog--texto{
+    color: white;
+    font-size: 25px;
+}
