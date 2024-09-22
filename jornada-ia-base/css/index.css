@@ -93,17 +93,20 @@
 }
 
 .ofertas-titulo--container,
-.busca-titulo--container {
+.busca-titulo--container,
+.destino-titulo--container {
     display: flex;
     min-width: 312px;
     max-width: 600px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin: auto;
 }
 
 .ofertas-titulo,
-.busca-titulo {
+.busca-titulo,
+.destino-titulo {
     color: var(--Grafite, #222);
     text-align: center;
     font-family: Montserrat;
@@ -111,15 +114,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: -40px;
 }
 
 .ofertas-sublinhado,
-.busca-sublinhado {
+.busca-sublinhado,
+.destino__populares--sublinhado {
     width: 180px;
     height: 4px;
     background: var(--Vermelho, #B81515);
     align-items: center;
-    margin-top: -15px;
 }
 
 .ofertas__cards {
@@ -250,10 +254,11 @@
     align-self: stretch;
 }
 
-.busca-sublinhado{
+.busca-sublinhado {
     margin-top: 0;
     margin-bottom: 70px;
 }
+
 .busca__categoria--pacotesNacionais {
     width: 249px;
     height: 172px;
@@ -272,7 +277,7 @@
     width: 1197px;
     align-items: center;
     gap: 24px;
-   
+
 }
 
 .busca__img--nacionais {
@@ -294,4 +299,112 @@
     font-weight: 700;
     line-height: normal;
     align-self: stretch;
+}
+
+.destino {
+    width: 1200px;
+    height: 873px;
+    display: flex;
+    padding: 0px 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+    margin: auto;
+}
+
+.destino__populares {
+    width: 325px;
+    height: 59px;
+    display: flex;
+    min-width: 312px;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+
+}
+
+.destino__populares--titulo {
+    color: var(--Grafite, #222);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.destino__populares--grupo {
+    width: 1200px;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.destino__populares--tokyo,
+.destino__populares--osaka {
+    width: 588px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.destino__populares--imgTokyo,
+.destino__populares--imgOsaka {
+    width: 588px;
+    height: 452px;
+    background: url('../img/tokyo.png') lightgray 50% / cover no-repeat;
+}
+
+.destino__populares--imgOsaka {
+    width: 588px;
+    height: 452px;
+    background: url('../img/Osaka.jpg') lightgray 50% / cover no-repeat;
+}
+
+.destino__populares--tokyoTitulo,
+.destino__populares--osakaTitulo {
+    color: var(--Grafite, #222);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.destino__populares--ConteudoTokyo,
+.destino__populares--ConteudoOsaka {
+    width: 588px;
+    color: var(--Grafite, #222);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+
+.destino__populares--button {
+    width: 248px;
+
+    display: flex;
+    width: 280px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 8px;
+    background: var(--Vermelho, #B81515);
+    color: var(--branco);
 }
