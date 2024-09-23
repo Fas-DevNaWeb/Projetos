@@ -527,11 +527,12 @@
     width: 1200px;
     height: 329px;
     display: flex;
-    padding: 0px 360px;
+    padding: 0px 120px;
     flex-direction: column;
     align-items: center;
     gap: 64px;
     align-self: stretch;
+    margin: auto;
 }
 
 .depoimentos__container {
@@ -553,7 +554,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: auto;
+    margin-top: 58px;
+    margin-bottom: -5px;
 }
 
 .depoimentos__sublinhado {
@@ -561,6 +563,7 @@
     height: 4px;
     background: var(--Vermelho, #B81515);
     align-items: center;
+    margin-bottom: -70px;
 }
 
 .depoimentos__container--grupo {
@@ -658,7 +661,7 @@
 
 .footer {
     width: 1920px;
-    height: 138px;
+    height: 168px;
     display: flex;
     height: 232px;
     padding: 32px 120px;
@@ -667,21 +670,23 @@
     align-self: stretch;
     background: var(--Preto, #000);
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .rodape__jornada {
-    width: 1680px;
-    height: 168px;
+    width: 591px;
+    height: 128px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 0px;
+    gap: 16px;
 }
 
-.rodape__jornada--logo {
+.logo__jornada{
     width: 161.839px;
     height: 40px;
+    margin-top: 25px;
 }
 
 .rodape__texto {
@@ -691,10 +696,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    margin: 0;
 }
-
 .rodape__icones {
-    width: 165px;
+    width: 220px;
     height: 76px;
     display: flex;
     flex-direction: column;
@@ -707,7 +712,7 @@
     height: 32px;
 }
 
-.t {
+.rodape__icones1a3 {
     display: flex;
     gap: 15px;
 }
