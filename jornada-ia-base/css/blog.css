@@ -110,7 +110,7 @@
 .concluindo__titulo,
 .post__titulo {
   color: var(--Grafite, #222);
-  text-align: center;
+  text-align: left;
   font-family: Montserrat;
   font-size: 28px;
   font-style: normal;
