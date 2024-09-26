@@ -108,7 +108,10 @@
 .compras__titulo,
 .gastronomia__titulo,
 .concluindo__titulo,
-.post__titulo {
+.post__titulo,
+.posts__osaka--titulo,
+.posts__Hiroshima--titulo,
+.posts__kyoto--titulo {
   color: var(--Grafite, #222);
   text-align: left;
   font-family: Montserrat;
@@ -123,7 +126,10 @@
 .explorandoCidade__container--texto,
 .compras__texto,
 .gastronomia__texto,
-.concluindo__texto {
+.concluindo__texto,
+.posts__osaka--texto,
+.posts__Hiroshima--texto,
+.posts__kyoto--texto {
   align-self: stretch;
   color: var(--Grafite, #222);
   font-family: Montserrat;
@@ -209,8 +215,7 @@
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  align-self: stretch;
-  margin: 0px;
+  margin-bottom: 185px;
 }
 
 .post_container {
@@ -225,10 +230,59 @@
   align-self: stretch;
 }
 
-.post__sublinhado,
-.tokyo__sublinhado {
+.post__grupo{
+  display: flex;
+  height: 755px;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.posts__img {
+  height: 300px;
+  align-self: stretch;
+  background: url("../img/Osaka.jpg") lightgray 50% / cover no-repeat;
+}
+.posts__img--Hiroshima{
+  height: 300px;
+  align-self: stretch;
+  background: url("../img/Hiroshima.png") lightgray 50% / cover no-repeat;
+}
+
+.posts__img--kyoto{
+  height: 300px;
+  align-self: stretch;
+  background: url("../img/Kyoto.png") lightgray 50% / cover no-repeat;
+}
+.posts__osaka--button,
+.posts__Hiroshima--button,
+.posts__kyoto--button { 
+  height: 32px;
+  display: flex;
+  width: 280px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 8px;
+  background: var(--Vermelho, #B81515);
+  color: var(--branco);
+}
+
+.tokyo__sublinhado,
+.post__sublinhado {
   width: 180px;
   height: 4px;
   background: var(--Vermelho, #B81515);
-  align-items: center;
+  margin-left: 507px;
+  margin-top: 10px;
+}
+
+.post__sublinhado {
+  width: 180px;
+  height: 4px;
+  background: var(--Vermelho, #B81515);
+  margin-left: 200px;
+  margin-top: 10px;
 }

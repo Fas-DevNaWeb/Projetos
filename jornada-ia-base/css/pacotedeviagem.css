@@ -1,0 +1,250 @@
+.destinos__container {
+    display: flex;
+    width: 1920px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin: auto;
+    margin-top: 102px;
+    margin-bottom: 112px;
+}
+
+.imagem__banner--img {
+    background: url("../img/vulcao.png") lightgray 50% / cover no-repeat;
+}
+
+.destinos__container--excrusao {
+    width: 1200px;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+}
+
+.destinos__container--titulo {
+    display: flex;
+    min-width: 312px;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    ;
+}
+
+.destinos__titulo {
+    color: var(--Grafite, #222);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.destinos__sumblinhado,
+.pagamento__sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--Vermelho, #B81515);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.destinos__grupodes,
+.destinos__container--grupo {
+    width: 1200px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.destinos__grupo1,
+.destinos__grupo2 {
+    width: 588px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.destinos__img--tokyo {
+    width: 588px;
+    height: 452px;
+    background: url("../img/tokyo.png") lightgray 50% / cover no-repeat;
+}
+
+.destinos__img--osaka {
+    width: 588px;
+    height: 452px;
+    background: url("../img/Osaka.jpg") lightgray 50% / cover no-repeat;
+}
+
+.destinos__titulo--grupo1,
+.destinos__titulo--grupo2 {
+    color: var(--Grafite, #222);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.destinos__texto--grupo1,
+.destinos__texto--grupo2 {
+    width: 588px;
+    color: var(--Grafite, #222);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.destinos__grupo1--button {
+    display: flex;
+    width: 280px;
+    height: 65px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.pagamento__container {
+    display: flex;
+    width: 1920px;
+    height: 583px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.pagamento__container--titulo {
+    width: 312px;
+    height: 59px;
+    display: flex;
+    min-width: 312px;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.pagamento__titulo {
+    color: var(--Grafite, #222);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pagamento__grupo {
+    height: 268px;
+    display: flex;
+    width: 1197px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagamento__grupo1 {
+    width: 384px;
+    height: 268px;
+    display: flex;
+    width: 384px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.pagamento__grupo--titulo1 {
+    display: flex;
+    width: 285px;
+    height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--Grafite, #222);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pagamento__grupo--titulo2 {
+    display: flex;
+    width: 285px;
+    height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--Grafite, #222);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.pagamento__grupo--texto {
+    width: 361px;
+    color: var(--Grafite, #222);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 160% */
+}
+
+.pagamento__grupo2 {
+    display: flex;
+    width: 790px;
+    height: 460px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    ;
+}
+
+.pagamento__grupo--agrupamentoimg {
+    display: flex;
+    width: 791px;
+    height: 254px;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.pagamento__grupo2--img1 {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: url("../img/Montagem\ japão\ 1.png") lightgray 50% / cover no-repeat;
+}
+
+.pagamento__grupo2--img2 {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: url("../img/Montagem\ japão\ 2.png") lightgray 50% / cover no-repeat;
+}
+
+.pagamento__grupo2--img3 {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: url("../img/Montagem\ japão\ 3.png") lightgray 50% / cover no-repeat;
+}
