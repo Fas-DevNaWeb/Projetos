@@ -1,0 +1,80 @@
+.cabecalho__container {
+    display: flex;
+    width: 1920px;
+    height: 138px;
+    padding: 37px 0px;
+    align-items: center;
+    gap: 579px;
+    align-self: stretch;
+    background-color: var(--preto);
+    margin: auto;
+}
+
+.cabecalho {
+    width: 1200px;
+    height: 64px;
+    display: flex;
+    padding: 0px 360px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    color: #fff;
+}
+
+.cabecalho__logo--icone {
+    max-width: 260px;
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__navegacao--lista {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.cabecalho__navegacao--item a {
+    list-style: none;
+    color: var(--branco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner {
+    width: 1920px;
+    height: 620px;
+    flex-shrink: 0;
+    background-image: url("../img/maldivas@2x.png");
+    margin: auto;
+    margin-top: 0px;
+
+}
+
+.banner__wrapper {
+    margin: 0;
+}
+
+.banner__img {
+    max-width: 100%;
+}
+
+.banner__descricao {
+    width: 1200px;
+    height: 144px;
+    margin: auto;
+    color: var(--Grafite, #222);
+    text-align: center;
+    align-self: stretch;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 112px;
+    margin-bottom: 112px;
+}

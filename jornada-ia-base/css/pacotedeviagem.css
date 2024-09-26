@@ -141,6 +141,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin-bottom: 120px;
 }
 
 .pagamento__titulo {
@@ -159,6 +160,7 @@
     width: 1197px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 104px;
 }
 
 .pagamento__grupo1 {
@@ -247,4 +249,109 @@
     flex: 1 0 0;
     align-self: stretch;
     background: url("../img/Montagem\ japão\ 3.png") lightgray 50% / cover no-repeat;
+}
+
+.depoimentos__container--pacotes {
+    width: 1680;
+    height: 345px;
+    display: flex;
+    width: 1920px;
+    padding: 0px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;2
+}
+
+.depoimentos__container--titulo {
+    width: 312px;
+    height: 59px;
+    display: flex;
+    min-width: 312px;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.depoimentos__titulo {
+    color: var(--Grafite, #222);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.depoimentos__sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--Vermelho, #B81515);
+    margin: auto;
+    margin-top: 17px;
+}
+
+.depoimentos__container--grupoPacotes {
+    width: 1200px;
+    height: 222px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 104px;
+}
+
+.depoimentos__grupo1 {
+    width: 384px;
+    height: 222px;
+    display: flex;
+    width: 384px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.depoimentos__grupo1--texto {
+    align-self: stretch;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+.depoimentos__grupo1--perfil {
+    width: 286px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.depoimentos__grupo1--nome {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.depoimentos__grupo1--estrelas {
+    width: 176px;
+    height: 32px;
+}
+
+.depoimentos__estrelas {
+    width: 32px;
+    height: 32px;
+}
+
+.banner__Rodape--imgPacotes{
+    width: 1900px;
+    height: 600px;
+    align-self: stretch;
+    margin: auto;
 }
