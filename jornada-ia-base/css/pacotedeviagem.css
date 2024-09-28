@@ -259,7 +259,8 @@
     padding: 0px 120px;
     flex-direction: column;
     align-items: center;
-    gap: 64px;2
+    gap: 64px;
+    2
 }
 
 .depoimentos__container--titulo {
@@ -349,7 +350,7 @@
     height: 32px;
 }
 
-.banner__Rodape--imgPacotes{
+.banner__Rodape--imgPacotes {
     width: 1900px;
     height: 600px;
     align-self: stretch;

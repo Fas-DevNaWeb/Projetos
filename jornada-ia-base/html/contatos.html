@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/contatos.css">
     <title>Contatos</title>
 </head>
@@ -11,24 +14,82 @@
 <body>
     <div class="cabecalho__container">
         <header class="cabecalho">
-            <a href="../jornada-ia-base/index.html" class="cabecalho__logo">
-                <img class="cabecalho__logo--icone" alt="Logo da Jornada" src="./img/logoprovisriabranca-1@2x.png" />
+            <a href="../index.html" class="cabecalho__logo">
+                <img class="cabecalho__logo--icone" alt="Logo da Jornada" src="../img/logoprovisriabranca-1@2x.png" />
             </a>
             <nav class="cabecalho__navegacao" role="navigation" aria-label="Navegação principal">
                 <ul class="cabecalho__navegacao--lista">
-                    <li class="cabecalho__navegacao--item"><a href="./html/blog.html" target="_blank">Blog</a></li>
-                    <li class="cabecalho__navegacao--item"><a href="./html/pacotesDeViagem.html">Pacotes de viagem</a>
-                    </li>
-                    <li class="cabecalho__navegacao--item"><a href="">Contato</a></li>
+                    <li class="cabecalho__navegacao--item"><a href="blog.html">Blog</a></li>
+                    <li class="cabecalho__navegacao--item"><a href="pacotesDeViagem.html">Pacotes de viagem</a>                    </li>
+                    <li class="cabecalho__navegacao--item"><a href="html/contatos.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    <section class="banner">
-        <figure class="banner__wrapper">
-            <img class="banner__img" alt="Banner" src="./img/maldivas@2x.png" />
+    <section class="imagem">
+        <figure class="imagem__banner">
+            <div class="imagem__banner--imgContato">
+                <div class="contatos">
+                    <h1 class="contato__titulo">Entre em contato!
+                        <div class="contato__titulo--sublinhadoContato"></div>
+                    </h1>
+                    <p class="contato__titulo--texto">
+                        Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!
+                    </p>
+                </div>
+            </div>
         </figure>
     </section>
+    <div class="container__Formulario">
+        <div class="container__Formulario--grupo">
+            <div class="container__titulo">
+                <h3 class="container__titulo--texto">
+                    Preencha o Formulário
+                    <div class="container__sublinhado--forme"></div>
+                </h3>
+            </div>
+            <p class="container__texto">
+                Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas, trazer dicas e orientações
+                objetivas para tornar sua experiência o mais prazerosa e tranquila possível. Preencha seus dados que
+                vamos retornar seu contato conforme a urgência do seu chamado. Pode confiar!
+            </p>
+            <form action="" class="container__form">
+                <input type="text" class="teste" placeholder="Seu nome">
+                <div class="form__tel">
+                    <input type="text" class="teste2" placeholder="Telefone">
+                    <input type="email" class="teste2" placeholder="Email">
+                </div>
+                <input type="text" class="teste" placeholder="Assunto">
+                <label for="">Mensagem</label>
+                <textarea placeholder="Digite sua mensagem aquit!" class="container__textarea" rows="10"
+                    cols="110"></textarea>
+                <button class="container__form--button">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="rodape__imagem">
+        <img src="../img/Imagem-rodapé.png" alt="Rodapé da imagem">
+    </div>
+    <div class="footer">
+        <div class="rodape__jornada">
+            <img src="../img/logobranco-1@2x.png" alt="Logo da jornada" class="logo__jornada">
+            <p class="rodape__texto">Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
+            <p class="rodape__texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais</p>
+        </div>
+        <div class="rodape__icones">
+            <p class="rodape__texto">Acesse nossas redes:</p>
+            <div class="rodape__icones1a3">
+                <div class="rodape__icone1">
+                    <img src="../img/whatsapp-1.svg" alt="icone whatsapp">
+                </div>
+                <div class="rodape__icone2">
+                    <img src="../img/instragam-1.svg" alt="icone instragam">
+                </div>
+                <div class="rodape__icone3">
+                    <img src="../img/twiter-1.svg" alt="icone twiter">
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
