@@ -1,0 +1,51 @@
+.container {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+.item-1 {
+    background-color: #e43e0b;
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    flex-shrink: 1;
+}
+
+.item-2 {
+    background-color: #68b6e2;
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    flex-shrink: 1;
+}
+
+.item-3 {
+    background-color: rgb(129, 224, 5);
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    flex-shrink: 1;
+}
+
+.item-4 {
+    background-color: rgb(0, 217, 255);
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    flex-shrink: 2;
+}
+
+/*
+    Diferente da propriedade flex-grow, que quanto maior o valor inserido, 
+    mais um item poderá crescer. Com a propriedade flex-shrink quanto maior 
+    o valor inserido, mais este item irá encolher em relação aos seus itens irmãos.
+
+    Como Calcular
+    Largura total do container: 1000px
+    Largura de cada imagem: 200px (4x200 = largura total das imagens juntas 800px)
+    Largura disponível: 200px
+    Dividindo o espaço disponível para cada item, 200px/4 = 50px
+    O espaço disponível é distribuído proporcionalmente. Aumentando para 250px a largura de cada uma das imagens.
+*/
