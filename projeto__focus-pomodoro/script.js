@@ -34,4 +34,3 @@ btnDescansoCurto.addEventListener('click', () => {
 btnDescancoLongo.addEventListener('click', () => {
     alterarContexto('descanso-longo')
 })
-

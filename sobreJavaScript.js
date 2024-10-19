@@ -1,4 +1,4 @@
-/*
+
 FORMAS DE SELECIONAR ELEMENTOS NO
 
 1° - getElementById('id') Seleciona o elemento pelo IdleDeadline
@@ -35,4 +35,5 @@ addEventListener(evento, callback)
     removeAttribute('nome do atributo') - É usado para remover um atributo de um elemento Html 
 
 
-    */
+SOBRE O MÉTODO innerHTML
+    Inserir um novo elemento 
