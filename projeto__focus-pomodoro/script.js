@@ -4,10 +4,17 @@ const btnDescansoCurto = document.querySelector('.app__card-button--curto')
 const btnDescancoLongo = document.querySelector('.app__card-button--longo')
 const appImage = document.querySelector('.app__image')
 const titulo = document.querySelector('.app__title');
+const botoes = document.querySelectorAll('.app__card-button')
+const musicaFoco = document.querySelector('#alternar-musica')
+const musica = new Audio('./sons/luna-rise-part-one.mp3')
 
-
+console.log(musicaFoco)
+musica.loop = true //Musica vai ficar tocando continuamente.
 
 function alterarContexto(contexto) {
+    botoes.forEach(function (contexto) {
+        contexto.classList.remove('active')
+    })
     fundoHtml.setAttribute('data-contexto', `${contexto}`)
     appImage.setAttribute('src', `./imagens/${contexto}.png`)
     switch (contexto) {
@@ -23,14 +30,26 @@ function alterarContexto(contexto) {
     }
 }
 
+
 btnFoco.addEventListener('click', () => {
     alterarContexto('foco')
+    btnFoco.classList.add('active')
 })
 
 btnDescansoCurto.addEventListener('click', () => {
     alterarContexto('descanso-curto')
+    btnDescansoCurto.classList.add('active')
 })
 
 btnDescancoLongo.addEventListener('click', () => {
     alterarContexto('descanso-longo')
+    btnDescancoLongo.classList.add('active')
+})
+
+musicaFoco.addEventListener('change', () => {
+    if (musica.paused) {
+        musica.play()
+    } else {
+        musica.pause()
+    }
 })

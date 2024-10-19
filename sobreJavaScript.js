@@ -36,4 +36,27 @@ addEventListener(evento, callback)
 
 
 SOBRE O MÉTODO innerHTML
-    Inserir um novo elemento 
+    É utilizado para inserir textos ou adicionar elementos dentro de outra tag html. 
+
+SOBRE O MÉTODO ClassList
+    classList é uma propriedade do JavaScript que representa uma lista de classes CSS.
+    Ela fornece métodos que facilitam a adição, remoção e verificação de classes, 
+    tornando a manipulação de classes CSS mais eficiente e menos suscetível a erros de programação.
+
+    São utilizados com ela os métodos - add(), remove(), toggle(), contains()
+
+
+MANIPULANDO Audio
+    Para criar um novo objeto ‘Audio’, podemos simplesmente usar a seguinte sintaxe:
+    const audioElement = new Audio('caminho/do/arquivo-de-audio.mp3');
+
+    Controles básicos de áudio
+    play(): inicia a reprodução do áudio;
+    pause(): pausa a reprodução do áudio;
+    currentTime: propriedade que retorna ou define a posição atual de reprodução do áudio, em segundos;
+    volume: propriedade que retorna ou define o nível de volume do áudio, variando de 0 a 1.
+
+    audioElement.play(); // Inicia a reprodução
+    audioElement.pause(); // Pausa a reprodução
+    audioElement.currentTime = 10; // Move para 10 segundos no áudio
+    audioElement.volume = 0.5; // Define o volume para metade (50%)
