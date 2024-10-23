@@ -3,7 +3,6 @@ const btn__cat = document.querySelector(".get-cat");
 const btn__surprise = document.querySelector(".get-surprise");
 const img__pet = document.querySelector(".img-pet");
 
-
 const buscarApiDog = () => {
   const promiseDog = fetch("https://dog.ceo/api/breeds/image/random")
     .then((respostaDog) => {
@@ -12,7 +11,8 @@ const buscarApiDog = () => {
     .then((dataDog) => {
       img__pet.src = dataDog.message;
     });
-};
+  };
+
 
 const buscarApiCat = () => {
   const promiseCat = fetch("https://api.thecatapi.com/v1/images/search")
