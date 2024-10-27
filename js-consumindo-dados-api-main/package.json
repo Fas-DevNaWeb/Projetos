@@ -1,0 +1,14 @@
+{
+  "name": "js-consumindo-dados-api-main",
+  "version": "1.0.0",
+  "description": "Repositório do treinamento \"JavaScript: Consumindo e tratando dados de uma API\" da Alura Cursos Online.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
