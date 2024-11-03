@@ -1,4 +1,4 @@
-
+/*
 FORMAS DE SELECIONAR ELEMENTOS NO
 
 1° - getElementById('id') Seleciona o elemento pelo IdleDeadline
@@ -127,3 +127,104 @@ const teste = fetch('http://viacep.com.br/ws/01001000/json/')
     .then(data => {
         console.log(data.estado)
     })
+*/
+
+// SOBRE STRING
+// FORMAS DE USAR STRING COM ASPAS DUPLAS
+const frase1 = "Ela disse 'Adeus'"  
+
+// COM ASPAS SIMPLES
+const frase2 = 'Ela disse "Adeus"'
+console.log(frase1)
+console.log(frase2)
+
+// FORMAS DE CONVERTER NÚMEROS PARA STRINGS 
+const numero = 256
+const numeroConvertido = new String(numero)
+
+// SEGUNDA FORMA DE CONVERTER STRINGS 
+console.log(typeof numero.toString())
+
+//CONCATENANDO STRINGS
+let nome = "Andre "
+let sobrenome = " Silva"
+let saudacao = "Seja bem vindo " + nome + sobrenome
+console.log(saudacao)
+
+//INTERPOLAÇÃO STRING (TAMPLATE STRING)
+let texto = `Ola! Eu sou ${nome} ${sobrenome}`
+console.log(texto)
+
+//
+let nome2 = "André"
+let poema = `
+   E agora, ${nome}?
+   A festa acabou,
+   a luz apagou,
+   o povo sumiu,
+   a noite esfriou,
+   e agora, ${nome}?
+   e agora, você?
+   você que é sem nome,
+   que zomba dos outros,
+   você que faz versos,
+   que ama, protesta?
+   e agora, ${nome}?
+`
+console.log(poema)
+
+//MÉTODOS INTERESSANTES
+// length retorna o tamnho da String
+let teste = poema.length
+console.log(teste)
+
+// charAt acessa um caractere de uma String
+console.log('Fabiano Alves'.charAt(8))
+
+// Acessar através de colchetes
+const palavra="Alura"
+console.log(palavra[0])
+
+// Retorna o indice na posição do caractere,retorna sempre a primeira ocorrencia
+const palavra2="Alura"
+console.log(palavra.indexOf('a'))
+
+const palavra3="alura";
+// Coloca a String em maiúscula
+console.log(palavra.toUpperCase())
+// Coloca a String em minusculas
+console.log(palavra.toLowerCase())
+
+//permite que façamos a extração de parte de uma string
+let frase= "Mergulhando em tecnologia."
+console.log(frase.substring(0,11))
+
+// Ele é similar ao substring() e retornará parte de uma string, desde que passemos 
+//nos parâmetros o índice de início e de fim. Veja abaixo:
+let frase3= "Mergulhando em tecnologia."
+console.log(frase.slice(0,11))
+
+// Temos a possibilidade de substituir parte de uma string por outra.
+let nome1 = "André";
+let comunicacao = " Olá, sr. nomeusurario, informamos que a partir da presente data o senhor tem 50% de desconto em nossa loja.";
+console.log(comunicacao.replace("nomeusurario",nome));
+
+//É uma opção para concatenar strings sem a utilização do operador de adição (+)
+let novaString = "Programe nas principais linguagens e plataformas. Explore linguagens como ";
+console.log(novaString.concat("JavaScript,").concat(" Python,").concat(" e C#."))
+
+//Conseguimos quebrar uma string com base em caracteres separadores que vamos informar 
+//para o método como parâmetro.
+let linguagens = "JavaScript;Java;C#;PHP;Python;Go;Vb;SQL;C;C++";
+let arrayLinguagens = linguagens.split(";");
+console.log(arrayLinguagens)
+
+
+//O trim() remove os espaços em branco no início ou fim de uma string. Se em alguma 
+//situação precisarmos fazer uma verificação de que o usuário não digitou o login 
+//com espaços, faremos;
+let login = "   andre@emailteste.com      ";
+let loginSemEspaco = login.trim();
+console.log(loginSemEspaco);
+
+
