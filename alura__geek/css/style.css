@@ -2,7 +2,14 @@
     padding: 0;
     margin: 0;
 }
+/*
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+.ibm-plex-sans-thin {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }*/
 #container__cabecalho {
     display: flex;
     flex-direction: row;
@@ -44,7 +51,7 @@
     padding: 20px;
     gap: 40px;
     width: 758px;
-    height: 1115px;
+    height:80%;
     border: 1px solid;
     flex: none;
     order: 0;
@@ -99,4 +106,41 @@
    
     flex-direction: column;
     gap: 20px;
+}
+
+.card{
+box-sizing: border-box;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+font-family: 'IBM Plex Mono';
+width: 196px;
+height: 258px;
+
+background: #5D04D9;
+border: 3px solid #000000;
+box-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+font-size: 20px;
+font-weight: 100px;
+color: white;
+}
+
+.card-container--value{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 176px;
+height: 24px;
+font-weight: bolder;
+
 }
