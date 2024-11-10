@@ -2,145 +2,61 @@
     padding: 0;
     margin: 0;
 }
-/*
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-.ibm-plex-sans-thin {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }*/
 #container__cabecalho {
+    width: 1440px;
+    height: 96px;
+    background: #5300C8;
+    box-shadow: 0px 7px 0.9px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
-    border: 1px solid;
-    width: 1440px;
-    height: 96px;
-
-    background: #5300C8;
-    box-shadow: 0px 7px 0.9px rgba(0, 0, 0, 0.25);
-
     margin: auto;
-    color: white;
 }
 
 #container__corpoPrincipal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 50px 30px;
-    gap: 40px;
     width: 1380px;
     height: 1235px;
-    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 70px;
     border-radius: 10px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    border: 1px solid;
     margin: auto;
 }
 
 .container__corpoPrincipal--produtos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 40px;
     width: 758px;
-    height:80%;
-    border: 1px solid;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.container__corpoPrincipal--formulario {
+    height: 1115px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     gap: 40px;
-
-    width: 472px;
-    height: 517px;
-
-    background: #FFFFFF;
     border: 1px solid;
 }
 
-#container__rodape {
-    /* Footer */
+.container__grupo--cards {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 64px;
-
-    width: 1316px;
-    height: 96px;
-
-    background: #5300C8;
-    box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
-    margin: auto;
-
-}
-
-.container__rodape--texto {
-    width: 375px;
-    height: 48px;
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-   
-    flex-direction: column;
     gap: 20px;
 }
 
-.card{
-box-sizing: border-box;
+.container__corpoPrincipal--formulario {
+    width: 472px;
+    height: 517px;
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
-font-family: 'IBM Plex Mono';
-width: 196px;
-height: 258px;
+    border: 1px solid;
 
-background: #5D04D9;
-border: 3px solid #000000;
-box-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-font-size: 20px;
-font-weight: 100px;
-color: white;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;   
 
-.card-container--value{
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 10px;
-
-width: 176px;
-height: 24px;
-font-weight: bolder;
-
+    background: #FFFFFF;
 }
