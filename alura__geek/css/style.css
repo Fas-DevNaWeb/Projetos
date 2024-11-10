@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+/* inicio css cabeçalho */
 #container__cabecalho {
     width: 1440px;
     height: 96px;
@@ -16,9 +17,12 @@
     margin: auto;
 }
 
+/* Fim css cabeçalho*/
+
+/* inicio css main */
 #container__corpoPrincipal {
     width: 1380px;
-    height: 1235px;
+    height: 1100px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -38,25 +42,61 @@
     align-items: center;
     padding: 40px;
     gap: 40px;
-    border: 1px solid;
 }
 
 .container__grupo--cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
+.card {
+    border-radius: 5px;
+    padding: 22px;
+    background-color: #5300C8;
+    border: 1px solid;
+    border-color: coral;
+}
+
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    gap: 15px;
+}
+
+.imagem__produto {
+    width: 160px;
+    height: 180px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: burlywood;
+    margin-bottom: 10px;
+}
+
+.card-container--value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+/* Fim css main */
+
+/* Inicio css formulario*/
 .container__corpoPrincipal--formulario {
     width: 472px;
     height: 517px;
-
-    border: 1px solid;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    gap: 40px;   
+    gap: 40px;
 
     background: #FFFFFF;
 }
@@ -72,6 +112,26 @@
     gap: 20px;
 }
 
-.inputsDeentrada{
-    
+.inputsDeentrada {
+    width: 392px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: #5300C8;
+    padding: 15px;
 }
+
+.inputsBotoes {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: large;
+    background-color: #5300C8;
+    color: white;
+}
+
+.container__corpoPrincipal--design {
+    color: #5300C8;
+}
+
+/* Fim css Formulario */
