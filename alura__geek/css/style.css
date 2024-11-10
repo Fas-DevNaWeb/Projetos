@@ -60,3 +60,18 @@
 
     background: #FFFFFF;
 }
+
+.alinhamento__botoes {
+    width: 395px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputsDeentrada{
+    
+}
