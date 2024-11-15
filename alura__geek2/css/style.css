@@ -15,18 +15,122 @@
     align-items: center;
 
     margin: auto;
+    margin-bottom: 67px;
 }
+
 /*Fim do css cabeçalho*/
 
 /* Inicio do css corpo*/
-#container-corpo{
+#container__corpo {
     width: 1730px;
-    height: 911px;
-    border: 1px solid;
     padding: 10px;
+
+    gap: 50px;
+    display: flex;
+    justify-content: space-around;
 
     margin: auto;
 }
+
+.container__corpo--cards {
+    width: 1090px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+}
+
+.container__corpo--meusProdutos {
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card {
+    width: 170px;
+    height: 260px;
+    border: 4px solid;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #6c1daa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__imagem {
+    width: 166px;
+    height: 170px;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card__nome {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+.card__linhaPreco {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/* Inicio do css formulário*/
+.container__corpo--formulario {
+    width: 530px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.inputs-fom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.estilos-inputs {
+    width: 400px;
+    height: 55px;
+    border-radius: 7px;
+    color: #6c1daa;
+    border: 2px solid blue;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.estilo-botoes {
+    width: 191px;
+    height: 45px;
+    background-color: blueviolet;
+    border-radius: 7px;
+    font-size: 20px;
+    color: white;
+}
+
+#container__buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Fim do css formulário*/
+
+
+
+
 /* Fim do css corpo*/
 
 /* Inicio do css rodapé */
@@ -51,4 +155,13 @@
 .container__rodape--subtitulo {
     color: white;
 }
+
 /* Fim do css rodapé */
+@media screen {
+    @media(max-width:1024px) {
+        #container-cabecalho {
+            text-align: left;
+        }
+    }
+
+}
