@@ -1,0 +1,58 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Camera fotografica",
+            "valor": "R$ 400,00",
+            "imagem": "https://www.designi.com.br/images/preview/12603196.jpg"
+        },
+        {
+            "id": 2,
+            "nome": "Motorola 54G",
+            "valor": "R$ 1400,00",
+            "imagem": "https://c0.klipartz.com/pngpicture/130/265/gratis-png-telefono-con-funciones-para-smartphone-xiaomi-mi4-xiaomi-mi-mix-xiaomi-mi-a1-xiaomi-mi-mix-2.png"
+        },
+        {
+            "id": 2,
+            "nome": "Motorola 54G",
+            "valor": "R$ 1400,00",
+            "imagem": "https://c0.klipartz.com/pngpicture/130/265/gratis-png-telefono-con-funciones-para-smartphone-xiaomi-mi4-xiaomi-mi-mix-xiaomi-mi-a1-xiaomi-mi-mix-2.png"
+        },
+        {
+            "id": 3,
+            "nome": "Projetor Multimidia",
+            "valor": "R$ 3200,00",
+            "imagem": "https://w7.pngwing.com/pngs/85/415/png-transparent-multimedia-projectors-wide-xga-digital-light-processing-projector.png"
+        },
+        {
+            "id": 4,
+            "nome": "Furadeira Troll",
+            "valor": "R$380,00",
+            "imagem": "https://www.designi.com.br/images/preview/11324371.jpg"
+        },
+        {
+            "id": 5,
+            "nome": "Fone Gamer RGX",
+            "valor": "R$ 180,00",
+            "imagem": "https://www.imagensempng.com.br/wp-content/uploads/2021/05/Headset-Gamer-RGB-Png-1024x1024.png"
+        },
+        {
+            "id": 5,
+            "nome": "Playstation 5 Slim",
+            "valor": "R$ 4800,00",
+            "imagem": "https://i.zst.com.br/thumbs/12/1d/b/-1202927867.jpg"
+        },
+        {
+            "id": 5,
+            "nome": "Fone Gamer RGX",
+            "valor": "R$ 180,00",
+            "imagem": "https://www.imagensempng.com.br/wp-content/uploads/2021/05/Headset-Gamer-RGB-Png-1024x1024.png"
+        },
+        {
+            "id": 5,
+            "nome": "Playstation 5 Slim",
+            "valor": "R$ 4800,00",
+            "imagem": "https://i.zst.com.br/thumbs/12/1d/b/-1202927867.jpg"
+        }
+    ]
+}

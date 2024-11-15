@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Alura Geek</title>
     <script src="js/mostrarProdutos.js" type="module" defer></script>
+    <script src="js/criarProduto.js" type="module" defer></script>
 </head>
 
 <body>
@@ -19,18 +20,18 @@
         <section class="container__corpoPrincipal--produtos">
             <h1 class="container__corpoPrincipal--design">MEUS PRODUTOS</h1>
             
-            <div class="container__grupo--cards" data-card ></div>
-            
+            <div class="container__grupo--cards" data-card ></div>            
         </section>
+
         <section class="container__corpoPrincipal--formulario">
             <h1 class="container__corpoPrincipal--design">ADICIONAR PRODUTO</h1>
-            <form action="" class="container__corpoPrincipal--formulario">
-                <input type="text" name="" id="" placeholder="Nome do produto" class="inputsDeentrada">
-                <input type="text" name="" id="" placeholder="Entre com o valor do produto" class="inputsDeentrada">
-                <input type="text" name="" id="" placeholder="Entre com a imagem do produto" class="inputsDeentrada">
+            <form action="" class="container__corpoPrincipal--formulario" data-formulario>
+                <input type="text" name="" id="" placeholder="Nome do produto" class="inputsDeentrada" data-nome>
+                <input type="text" name="" id="" placeholder="Entre com o valor do produto" class="inputsDeentrada" data-valor>
+                <input type="text" name="" id="" placeholder="Entre com a imagem do produto" class="inputsDeentrada" data-imagem>
                 <div class="alinhamento__botoes">
-                    <input type="button" value="Guardar" class="inputsBotoes">
-                    <input type="button" value="Limpar" class="inputsBotoes">
+                    <input type="button" value="Guardar" class="inputsBotoes" data-botao-guardar>
+                    <input type="button" value="Limpar" class="inputsBotoes" data-botao-limpar>
                 </div>
             </form>
         </section>
