@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+   
 /* Inicio do css cabeçalho */
 #container__cabecalho {
     width: 1730px;
@@ -157,11 +157,3 @@
 }
 
 /* Fim do css rodapé */
-@media screen {
-    @media(max-width:1024px) {
-        #container-cabecalho {
-            text-align: left;
-        }
-    }
-
-}
