@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsivo.css">
     <script src="js/criarCards.js" type="module" defer></script>
+    <script src="js/enviarDadosCards.js" type="module" defer></script>
     <title>Alura Geek</title>
 </head>
 
@@ -28,14 +29,14 @@
 
             <h1 class="container__corpo--tituloFormulario">ADICIONAR PRODUTOS</h1>
 
-            <form action="" class="inputs-fom">
-                <input type="text" name="nome" id="nome" class="estilos-inputs" placeholder="Entre com nome do produto">
-                <input type="text" name="valor" id="valor" class="estilos-inputs" placeholder="Valor do produto">
-                <input type="text" name="imagem" id="imagem" class="estilos-inputs" placeholder="Imagem do produto">
-
+            <form action="" class="inputs-fom" dados-formulario>
+                <input type="text" name="nome" id="nome" class="estilos-inputs" placeholder="Entre com nome do produto" dados-nome>
+                <input type="text" name="valor" id="valor" class="estilos-inputs" placeholder="Valor do produto" dados-valor>
+                <input type="text" name="imagem" id="imagem" class="estilos-inputs" placeholder="Imagem do produto" dados-imagem>
+                <p class="mensagem-erro"></p>
                 <div id="container__buttons">
-                    <input type="submit" value="Guardar" class="estilo-botoes">
-                    <input type="submit" value="Limpar" class="estilo-botoes">
+                    <input type="submit" value="Guardar" class="estilo-botoes" botao-guardar>
+                    <input type="submit" value="Limpar" class="estilo-botoes" botao-limpar>
                 </div>
             </form>
 
