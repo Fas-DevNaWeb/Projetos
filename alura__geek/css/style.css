@@ -3,170 +3,166 @@
     margin: 0;
 }
 
-/* inicio css cabeçalho */
+/* Inicio do css cabeçalho */
 #container__cabecalho {
-    width: 1440px;
-    height: 96px;
-    background: #5300C8;
-    box-shadow: 0px 7px 0.9px rgba(0, 0, 0, 0.25);
+    width: 1730px;
+    height: 100px;
+    background-color: #6c1daa;
+
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    padding: 10px;
     align-items: center;
-    padding: 20px 0px;
+
     margin: auto;
-    margin-top: 4px;
+    margin-bottom: 67px;
 }
 
-/* Fim css cabeçalho*/
+/*Fim do css cabeçalho*/
 
-/* inicio css main */
-#container__corpoPrincipal {
-    width: 1380px;
-    height: 1100px;
+/* Inicio do css corpo*/
+#container__corpo {
+    width: 1730px;
+    padding: 10px;
+
+    gap: 50px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 60px 40px;
-    gap: 70px;
-    border-radius: 10px;
+    justify-content: space-around;
+
     margin: auto;
 }
 
-.container__corpoPrincipal--produtos {
-    width: 758px;
-    height: 1115px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    gap: 40px;
-}
-
-.container__grupo--cards {
-    width: 800px;
+.container__corpo--cards {
+    width: 1090px;
+    padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 46px;
 }
+
+.container__corpo--meusProdutos {
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .card {
+    width: 170px;
+    height: 260px;
+    border: 4px solid;
     border-radius: 5px;
-    padding: 22px;
-    background-color: #5300C8;
-    border: 1px solid;
-    border-color: coral;
+    padding: 30px;
+    background-color: #6c1daa;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
 }
 
-.card-container--info {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+.card__imagem {
+    width: 166px;
+    height: 170px;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.imagem-do-card {
+    width: 163px;
+    height: 169px;
+}
+
+.card__nome {
+    font-size: 21px;
     color: white;
     text-align: center;
-    gap: 15px;
 }
 
-.imagem__produto {
-    width: 160px;
-    height: 180px;
-    border: 2px solid;
-    border-radius: 5px;
-    border-color: burlywood;
-    margin-bottom: 10px;
+.card__linhaPreco {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-card {
-    width: 157px;
-    height: 175px;
-    border-radius:5px;
-}
-
-.card-container--value {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    font-size: 25px;
     font-weight: bold;
+    color: white;
 }
 
-/* Fim css main */
 
-/* Inicio css formulario*/
-.container__corpoPrincipal--formulario {
-    width: 472px;
-    height: 517px;
 
+/* Inicio do css formulário*/
+.container__corpo--formulario {
+    width: 530px;
+    height: 510px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
-    padding: 40px;
     gap: 40px;
-
-    background: #FFFFFF;
 }
 
-.alinhamento__botoes {
-    width: 395px;
-    height: 60px;
+.inputs-fom {
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
 }
 
-.inputsDeentrada {
-    width: 392px;
-    height: 40px;
-    border-radius: 5px;
+.estilos-inputs {
+    width: 400px;
+    height: 55px;
+    border-radius: 7px;
+    color: #6c1daa;
+    border: 2px solid blue;
     font-size: 20px;
-    border-color: #5300C8;
-    padding: 15px;
-    color: #5300C8;
+    padding-left: 25px;
 }
 
-.inputsBotoes {
-    width: 300px;
-    height: 50px;
-    border-radius: 5px;
-    font-size: large;
-    background-color: #5300C8;
+.estilo-botoes {
+    width: 191px;
+    height: 45px;
+    background-color: blueviolet;
+    border-radius: 7px;
+    font-size: 20px;
     color: white;
 }
 
-.container__corpoPrincipal--design {
-    color: #5300C8;
+#container__buttons {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-/* Fim css Formulario */
+/* Fim do css formulário*/
 
-/* Inicio css footer*/
+
+
+
+/* Fim do css corpo*/
+
+/* Inicio do css rodapé */
 #container__rodape {
-    width: 1440px;
-    height: 200px;
-
-    text-align: center;
-    font-size: 20px;
-    background-color: #5300C8;
-    color: #FFFFFF;
+    width: 1730px;
+    height: 150px;
+    background-color: #6c1daa;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
     align-items: center;
     gap: 10px;
-
-    border: 1px solid;
     margin: auto;
-    margin-bottom: 5px;
+}
+
+.container__rodape--titulo {
+    color: white;
+}
+
+.container__rodape--subtitulo {
+    color: white;
+}
+
+/* Fim do css rodapé */
+
+.mensagem-erro{
+    color: red;
 }
