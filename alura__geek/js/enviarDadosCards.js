@@ -44,4 +44,3 @@ btnLimpar.addEventListener('click', (e) => {
     document.querySelector("[dados-imagem]").value = ""
     e.preventDefault()
 })
-
