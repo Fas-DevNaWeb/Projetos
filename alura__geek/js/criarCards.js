@@ -12,7 +12,7 @@ function card(imagem, nome, valor) {
                              <p class="card__nome">${nome}</p>
                          <div class="card__linhaPreco">
                              <p class="card__preco">${valor}</p>
-                             <img src="img/🦆 icon _trash 2_.png" alt="imagem do icone lixeira deletar card">
+                            <button class="deletar-card"></button>
                          </div>`
     return objCard
 }
@@ -21,4 +21,19 @@ produtos.forEach(element => {
     containerDosCards.appendChild(card(element.imagem, element.nome, element.valor))
 });
 
+//console.log(produtos)
 
+
+const teste = document.querySelectorAll('.deletar-card')
+
+teste.forEach(element => {
+    element.addEventListener('click', () => {
+      
+        conecxoesApi.removerProdutos(`613c`)
+    })
+})
+
+
+export const criarCards = {
+    card
+}

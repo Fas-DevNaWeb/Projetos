@@ -1,16 +1,22 @@
 {
   "produtos": [
     {
-      "id": "562c",
+      "id": "c658",
       "imagem": "https://images.kabum.com.br/produtos/fotos/564916/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ram-geforce-rtx-3050-ssd-512gb-15-6-fhd-ips-144hz-windows-11-preto-anv15-51-58az_1715197005_gg.jpg",
       "nome": "Notebook Acerr",
       "valor": "R$ 3500,00"
     },
     {
-      "id": "bd43",
-      "imagem": "https://i.zst.com.br/thumbs/12/1d/b/-1202927867.jpg",
+      "id": "d179",
+      "imagem": "https://m.media-amazon.com/images/I/51E8McnK2UL._AC_SL1000_.jpg",
       "nome": "Notebook Acerr",
-      "valor": "R$ 3500,00"
+      "valor": "R$ 3900,00"
+    },
+    {
+      "id": "ada3",
+      "imagem": "https://i.zst.com.br/thumbs/12/1d/b/-1202927867.jpg",
+      "nome": "Torradeira LX8",
+      "valor": "R$ 3900,00"
     }
   ]
 }
