@@ -11,8 +11,6 @@ async function removerProdutos(id) {
         method: "DELETE",
         headers: { "Content-type": "application/json" },
     })
-    const conexaoConvertida = await conexao.json()
-    return conexaoConvertida
 }
 
 
