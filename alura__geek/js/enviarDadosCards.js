@@ -28,7 +28,8 @@ async function inserirDados(evento) {
             
             fraseErro.innerHTML = 'Insira um valor valido para cadastro !!!'.toLocaleUpperCase()
         } else {
-            await conecxoesApi.cadastrarProdutos(imagem.value, nome.value, valor.value);
+
+            await conecxoesApi.cadastrarProdutos(imagem.value, nome.value, valor.value)
             // window.location.href = "../pages/envio-concluido.html";
         }
     } catch (e) {

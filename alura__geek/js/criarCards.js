@@ -4,6 +4,7 @@ const produtos = await conecxoesApi.listadeProdutos()
 
 const containerDosCards = document.querySelector("[corpo-cards]")
 
+
 function card(imagem, nome, valor) {
     const objCard = document.createElement('div')
     objCard.className = 'card'
@@ -11,26 +12,25 @@ function card(imagem, nome, valor) {
                              <img src="${imagem}" class="imagem-do-card"></div>
                              <p class="card__nome">${nome}</p>
                          <div class="card__linhaPreco">
-                             <p class="card__preco">R$ ${valor}</p>
+                             <p class="card__preco">${valor}</p>
                             <button class="deletar-card"></button>
                          </div>`
     return objCard
 }
 
-
 produtos.forEach(element => {
-    const teste1 = element.valor
-    const t =  teste1.toLocaleString("pt-BR",{ style: "currency" , currency:"BRL"})
-    console.log(t)
-    containerDosCards.appendChild(card(element.imagem, element.nome,t))
+    const valor = Number.parseInt(element.valor)
+    const valorConvertido = valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+
+    containerDosCards.appendChild(card(element.imagem, element.nome, valorConvertido))
 })
 
-const teste = document.querySelectorAll('.deletar-card')
+const deletarCard = document.querySelectorAll('.deletar-card')
 
 const cardEmquestao = conecxoesApi.listadeProdutos()
 
 
-teste.forEach((element, indice) => {
+deletarCard.forEach((element, indice) => {
     element.addEventListener('click', () => {
         const teste = cardEmquestao.then(r => {
             conecxoesApi.removerProdutos(r[indice].id)
@@ -38,11 +38,6 @@ teste.forEach((element, indice) => {
     })
 })
 
-var valor = 1400;
-var texto = valor.toLocaleString("pt-BR",
-    { style: "currency", currency: "BRL" });
-
-console.log(texto);
 
 export const criarCards = {
     card

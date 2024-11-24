@@ -5,11 +5,15 @@ async function listadeProdutos() {
 }
 
 
-
 async function removerProdutos(id) {
     const conexao = await fetch(`http://localhost:3000/produtos/${id}`, {
         method: "DELETE",
         headers: { "Content-type": "application/json" },
+        body: JSON.stringify({
+            imagem: imagem,
+            nome: nome,
+            valor: valor
+        })
     })
 }
 

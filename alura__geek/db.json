@@ -1,16 +1,76 @@
 {
   "produtos": [
     {
-      "id": "5bdf",
-      "imagem": "https://images.kabum.com.br/produtos/fotos/564916/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ram-geforce-rtx-3050-ssd-512gb-15-6-fhd-ips-144hz-windows-11-preto-anv15-51-58az_1715197005_gg.jpg",
-      "nome": "Notebook Acerr",
-      "valor": "R$ 3500,00"
+      "id": "c5b2",
+      "imagem": "https://jcsbrasil.vteximg.com.br/arquivos/ids/162541-1000-1000/TSSTJC5BBKR_01.jpg?v=636567939757630000",
+      "nome": "Torradeira Oster",
+      "valor": "219"
     },
     {
-      "id": "56d5",
+      "id": "6502",
+      "imagem": "https://m.media-amazon.com/images/I/41ihMtWkcML._AC_.jpg",
+      "nome": "Bicicleta GTS",
+      "valor": "3900"
+    },
+    {
+      "id": "d88c",
       "imagem": "https://images.kabum.com.br/produtos/fotos/564916/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ram-geforce-rtx-3050-ssd-512gb-15-6-fhd-ips-144hz-windows-11-preto-anv15-51-58az_1715197005_gg.jpg",
       "nome": "Notebook Acerr",
-      "valor": "1233445"
+      "valor": "3500"
+    },
+    {
+      "id": "8f34",
+      "imagem": "https://i.zst.com.br/thumbs/12/1d/b/-1202927867.jpg",
+      "nome": "Plastation",
+      "valor": "4500"
+    },
+    {
+      "id": "490b",
+      "imagem": "https://kidverte.vteximg.com.br/arquivos/ids/169308-490-490/Fone-de-Ouvido-Gamer-KP-489-080920.jpg?v=637802743936100000",
+      "nome": "Fone Gamer Knup",
+      "valor": "189"
+    },
+    {
+      "id": "e108",
+      "imagem": " https://img.lojadomecanico.com.br/IMAGENS/46/448/186803/1628086010251.JPG",
+      "nome": "Furadeira Dewalt ",
+      "valor": "649"
+    },
+    {
+      "id": "3eca",
+      "imagem": "https://imgs.casasbahia.com.br/1554681109/1xg.jpg",
+      "nome": "Alexia Inteligente",
+      "valor": "2240"
+    },
+    {
+      "id": "51f7",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/416740/microfone_hyperx_accsquadcast_black_2285_1_842b8ac2ac3b2500864c941af09b498a.jpg",
+      "nome": "Microfone Hyperx",
+      "valor": "639"
+    },
+    {
+      "id": "be31",
+      "imagem": "https://imgs.ponto.com.br/1505942018/1xg.jpg",
+      "nome": "Contra Baixo",
+      "valor": "1559"
+    },
+    {
+      "id": "29dd",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_714231-MLB72126150224_102023-O.webp\"",
+      "nome": "Sandalia ",
+      "valor": "120"
+    },
+    {
+      "id": "1fe6",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/608666/antigo_relogio_de_parede_cuco_rei_14765_5_93f4955eea24051c806d0efdee6e54af_20220222000045.jpg",
+      "nome": "Relogio Cuco",
+      "valor": "1500"
+    },
+    {
+      "id": "9c3b",
+      "imagem": "https://rukminim2.flixcart.com/image/416/416/kae95e80/television/r/g/m/realme-tv-43-original-imafrz78gbgx3zz5.jpeg?q=70&crop=false",
+      "nome": "TV Full 40",
+      "valor": "949"
     }
   ]
 }
