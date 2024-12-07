@@ -1,0 +1,16 @@
+Com node instalado.
+npx é um gerenciador de pacotes do node.
+
+Então para criar um projeto base do React usa-se o seguinte comando:
+npx create-react-app + o nome do projeto
+
+Obs: npm roda coisas locais.
+     npx roda coisas remotas.
+
+1° - Componentes são criados com letra Maiúscula 
+2° - Declaração de classe usa-se: className="nome da classe"
+3° - Passagem de parametro para um componente, é como se tivesse criando uma propriedade como uma classe.
+     Primeiro você identifica para qual elemento você vai enviar esse parametro.
+     Ex: <CampoTexto label="Nome" placeholder="Digite seu nome"/>  
+     Lá na sua função ou melhor componente, você passa a palavra (props) como parametro da função.
+     OBS: Em React para acessar o valor de variavel você a coloca entre {}; Ex: <label>{props.label}</label> 
