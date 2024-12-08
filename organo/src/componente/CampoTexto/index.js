@@ -1,18 +1,21 @@
-// evento.targuet.value capitura o que foi digitado no input.
+// evento.targuet.value capitura o que foi digitado no input.Seria o valor que o usuário esta digitando.
+// onChange toda ves que o input for alterado ele vai executar aoDigitado a função
+//import { useState } from 'react'
 import './CampoTexto.css'
 
-let valor = 'HJGHHJGJ'
+//let valor = 'HJGHHJGJ'
 
-const aoDigitado = (evento) => {
-    valor = evento.target.value
-    console.log(valor)
-}
+
 
 const CampoTexto = (props) => {
-     return (
+
+    const aoDigitado = (evento) => {
+        props.aoAlterado(evento.target.value)
+    }
+    return (
         <div className="campo-texto">
             <label>{props.label}</label>
-            <input value={valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder}/>
+            <input value={props.value} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder} />
         </div>
     )
 }

@@ -1,0 +1,3 @@
+Para criar um projeto base do react começamos com seguinte comando:
+  npx creat-react-app + nomme do projeto
+  Lembrando que e necessário ter o node instalado
