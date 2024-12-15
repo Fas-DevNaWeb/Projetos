@@ -13,4 +13,4 @@
 
     5° Sobre o React.StrictMode -> Ele mostra os logs de erro que esta acontecendo na aplicação.
 
-    6° onChange é um evento que ouvindo quando determinada ação acontece.
+    6° onChange é um evento que ouvindo quando determinada ação acontece.toda vez que acontece uma alteração ele capitura.
