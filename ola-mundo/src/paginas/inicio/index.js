@@ -1,5 +1,7 @@
-export default function Inicio() {
-    return (
-        <h1>Ola! Mundo !!!!</h1>
+import styles from "./Inicio.module.css"
+
+export default function Inicio(){
+    return(
+        <h1>Componente Inicio !!!</h1>
     )
 }
