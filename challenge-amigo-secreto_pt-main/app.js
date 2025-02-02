@@ -21,7 +21,7 @@ function inserirNomeNaTela() {
 
 function cadastrarNomesDeAmigos() {
     if (inpNomeAmigo.value === '') {
-        alert('Insira um nome correto no campo')
+        alert('Insira um nome correto no campo de texto :)')
     } else {
         listaNomesGuardados.push(inpNomeAmigo.value)
         inpNomeAmigo.value = ''
@@ -38,7 +38,8 @@ btnCadastrar.addEventListener('click', () => {
 function sortearAmmigo() {
     const numeroSorteado = Math.floor(Math.random() * listaNomesGuardados.length)  
     if(numeroSorteado === 0){
-        return 'Entrecom  um nome no campo texto : ('
+        return 'Insira um nome correto no campo de texto :)'
+        
     }else{
      return listaNomesGuardados[numeroSorteado] 
     }   
@@ -46,7 +47,7 @@ function sortearAmmigo() {
 
 btnSortearAmigo.addEventListener('click', () => {
     const liNomeSorteado = document.createElement('li')
-    liNomeSorteado.innerHTML = `O amigo secreto sorteado é:${sortearAmmigo()}`
+    liNomeSorteado.innerHTML = sortearAmmigo()
     elemUl.style.display = "none"
    
     console.log(liNomeSorteado)
