@@ -227,7 +227,7 @@ body {
 .carousel-item {
 }
 
-@media (max-width: 430px) {
+@media (max-width: 550px) {
   .container_cabecalho {
     display: flex;
     flex-direction: column;
@@ -252,10 +252,7 @@ body {
     /*border: 1px solid;*/
     margin-left: 10px;
   }
-  .testeg {
-    display: none;
-  }
-
+  
   .nav2 {
     width: 100%;
   }
@@ -292,11 +289,9 @@ body {
 
   .incones {
     margin-top: 40px;
-    margin-left: 25px;
     height: 230px;
     display: flex;
     flex-direction: column;
-    border: 1px solid;
   }
 
   .incones a {
