@@ -1,5 +1,5 @@
 body {
-background-color: #290157;
+  background-color: #290157;
 }
 
 /* Inicio css Cabeçalho*/
@@ -182,10 +182,9 @@ background-color: #290157;
   color: #3055d9;
   gap: 60px;
 }
-.incones a{
-    margin-left: 30px;
+.incones a {
+  margin-left: 30px;
 }
-
 
 .icone_linkedim {
   width: 38px;
@@ -225,12 +224,10 @@ background-color: #290157;
   padding: 15px;
 }
 
-.carousel-item{
-   
+.carousel-item {
 }
 
-
-@media (max-width: 550px) {
+@media (max-width: 430px) {
   .container_cabecalho {
     display: flex;
     flex-direction: column;
@@ -238,13 +235,14 @@ background-color: #290157;
   }
 
   .ajustar_h1 {
-    /*border: 1px solid;*/
+    /* border: 1px solid; */
     width: 400px;
     padding: 5px;
+    margin-left: 43px;
   }
 
   .ajustar_h4 {
-    margin-left: 0px;
+    margin-left: 45px;
     text-align: center;
     /*border: 1px solid;*/
   }
@@ -253,6 +251,9 @@ background-color: #290157;
     width: 470px;
     /*border: 1px solid;*/
     margin-left: 10px;
+  }
+  .testeg {
+    display: none;
   }
 
   .nav2 {
@@ -264,7 +265,7 @@ background-color: #290157;
     gap: 5px;
     padding: 5px;
   }
-  .container_corpo_msg{
+  .container_corpo_msg {
     width: 450px;
   }
 
@@ -281,30 +282,31 @@ background-color: #290157;
 
   .personalisar_h3 {
     font-size: 20px;
-    width: 450px;
+    width: 420px;
   }
 
   .personalisar_h1 {
-    width: 450px;
+    width: 420px;
     font-size: 25px;
   }
 
   .incones {
     margin-top: 40px;
+    margin-left: 25px;
     height: 230px;
     display: flex;
     flex-direction: column;
+    border: 1px solid;
   }
 
-  .incones a{
+  .incones a {
     margin-right: 20px;
     margin-left: 20px;
   }
 
   .frase-rodape {
-    width: 450px;
+    width: 420px;
     height: 100px;
     text-align: center;
-    
   }
 }
