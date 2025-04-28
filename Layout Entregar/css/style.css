@@ -1,169 +1,165 @@
 body {
-    background: linear-gradient(0deg, #721DD3 0%, rgba(0, 0, 0, 1) 50%, #290157 50%);
+background-color: #290157;
 }
 
 /* Inicio css Cabeçalho*/
 .container_cabecalho {
-    color: white;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 100px;
+  color: white;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px;
 }
 
 .ajustar_h1 {
-    margin-bottom: 0px;
-    font-size: 40px;
-    text-shadow: 1px 1px 6px rgb(255, 255, 255);
-    text-align: center;
+  margin-bottom: 0px;
+  font-size: 40px;
+  text-shadow: 1px 1px 6px rgb(255, 255, 255);
+  text-align: center;
 }
 
 .ajustar_h4 {
-    margin-left: 145px;
-    margin-top: 0px;
-    font-size: 25px;
-    color: aqua;
-    text-shadow: 1px 1px 16px rgb(255, 255, 255);
+  margin-left: 145px;
+  margin-top: 0px;
+  font-size: 25px;
+  color: aqua;
+  text-shadow: 1px 1px 16px rgb(255, 255, 255);
 }
 
 /* Fim css Cabeçalho*/
 
-
-
 /*Inicio css Corpo*/
 .container_corpo {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 250px;
-    align-items: center;
-    border-color: aqua;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  align-items: center;
+  border-color: aqua;
 }
 
 .container_corpo_msg {
-    width: 650px;
-    color: white;
-    text-align: center;
+  width: 650px;
+  color: white;
+  text-align: center;
 }
 
 .container_corpo_msg h3 {
-    font-size: 35px;
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
 }
 
 .container_corpo_msg h1 {
-    font-size: 50px;
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px;
+  font-size: 45px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
 }
 
 .container_cronometro {
-    border: 2px solid;
-    width: 550px;
-    height: 400px;
-    border-radius: 20px;
-    opacity: 0.7;
-    border-color: rgb(216, 218, 219);
-
+  border: 2px solid;
+  width: 550px;
+  height: 400px;
+  border-radius: 20px;
+  opacity: 1.7;
+  border-color: rgb(216, 218, 219);
 }
 
 .nav2 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .link2 {
-    color: rgb(26, 194, 224);
+  color: rgb(26, 194, 224);
 }
 
 .cronometro {
-    font-size: 100px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .custom-control {
-    width: 25%;
-    margin: auto;
+  width: 25%;
+  margin: auto;
 }
 
 .custom-control-label {
-    color: white;
+  color: white;
 }
 
 .botao-comecar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #a65ff2, #3055d9);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #a65ff2, #3055d9);
 
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
 
 .botao-comecar:hover {
-    transform: scale(1.05);
-
+  transform: scale(1.05);
 }
 
 .icone-play {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .botao_alinhamento {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Fim css Corpo*/
 
 .dividir {
-    width: 700px;
-    height: 300px;
-    border: 1px solid;
+  width: 700px;
+  height: 300px;
+  border: 1px solid;
 }
 
 .container_tarefas {
-    border: 1px solid;
-    display: flex;
-    width: 80%;
-    margin: auto;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    color: white;
+  border: 1px solid;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: white;
 }
 
 .input-linha {
-    border: none;
-    border-bottom: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #ccc;
 
-    outline: none;
-    width: 100%;
-    font-size: 16px;
-    padding: 8px 0;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 0;
 }
 
 /*
@@ -175,127 +171,140 @@ body {
 }*/
 
 .incones {
-    width: 100%;
-    height: 90px;
-    margin: auto;
-    display: flex;
-    border-color: white;
-    background-color: #290157;
-    align-items: center;
-    justify-content: center;
-    color: #3055d9;
-    gap: 60px;
+  width: 100%;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  border-color: white;
+  background-color: #290157;
+  align-items: center;
+  justify-content: center;
+  color: #3055d9;
+  gap: 60px;
+}
+.incones a{
+    margin-left: 30px;
 }
 
+
 .icone_linkedim {
-    width: 38px;
-    height: 38px;
-    background-color: white;
-    border: 2px solid;
-    border-radius: 12px;
-    border-color: #fbfbfc;
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 12px;
+  border-color: #fbfbfc;
 }
 
 .img-icon {
-    background-color: white;
-    border-radius: 25px;
-    border: 2px solid;
-    border-color: #ffffff;
-    width: 40px;
-    height: 40px;
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #ffffff;
+  width: 40px;
+  height: 40px;
 }
 
 .vercel {
-    background-color: white;
-    border-radius: 15px;
-    width: 70px;
-    height: 40px;
+  background-color: white;
+  border-radius: 15px;
+  width: 70px;
+  height: 40px;
 }
 
 .frase-rodape {
-    display: flex;
-    width: 755px;
-    align-items: center;
-    border: 1px solid;
-    height: 40px;
-    border-radius: 8px;
-    margin-top: 10px;
-    background-color: #721DD3;
-    color: white;
-    padding: 15px;
+  display: flex;
+  width: 755px;
+  align-items: center;
+  border: 1px solid;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #721dd3;
+  color: white;
+  padding: 15px;
+}
+
+.carousel-item{
+   
 }
 
 
-
-
-
 @media (max-width: 550px) {
-    .container_cabecalho {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
+  .container_cabecalho {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 
-    .ajustar_h1 {
-        /*border: 1px solid;*/
-        width: 400px;
-        padding: 5px;
-    }
+  .ajustar_h1 {
+    /*border: 1px solid;*/
+    width: 400px;
+    padding: 5px;
+  }
 
-    .ajustar_h4 {
-        margin-left: 0px;
-        text-align: center;
-        /*border: 1px solid;*/
-    }
+  .ajustar_h4 {
+    margin-left: 0px;
+    text-align: center;
+    /*border: 1px solid;*/
+  }
 
-    .nav {
-        width: 470px;
-        /*border: 1px solid;*/
-        margin-left: 10px;
-    }
+  .nav {
+    width: 470px;
+    /*border: 1px solid;*/
+    margin-left: 10px;
+  }
 
-    .nav2 {
-        width: 100%;
-    }
+  .nav2 {
+    width: 100%;
+  }
 
-    .container_corpo {
-        display: block;
-        gap: 5px;
-        padding: 5px;
-    }
+  .container_corpo {
+    display: block;
+    gap: 5px;
+    padding: 5px;
+  }
+  .container_corpo_msg{
+    width: 450px;
+  }
 
-    .container_cronometro {
-        width: 430px;
-        height: 400px;
-        margin-bottom: 40px;
+  .container_cronometro {
+    width: 430px;
+    height: 400px;
+    margin-bottom: 40px;
+  }
 
-    }
+  .custom-control {
+    width: 50%;
+    text-align: center;
+  }
 
-    .custom-control {
-        width: 50%;
-        text-align: center;
-    }
+  .personalisar_h3 {
+    font-size: 20px;
+    width: 450px;
+  }
 
-    .personalisar_h3 {
-        font-size: 20px;
-        width: 450px;
-    }
+  .personalisar_h1 {
+    width: 450px;
+    font-size: 25px;
+  }
 
-    .personalisar_h1 {
-        width: 450px;
-        font-size: 25px;
-    }
+  .incones {
+    margin-top: 40px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .incones {
-        margin-top: 40px;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-    }
+  .incones a{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 
-    .frase-rodape {
-        width: 450px;
-        height: 100px;
-        text-align: center;
-    }
+  .frase-rodape {
+    width: 450px;
+    height: 100px;
+    text-align: center;
+    
+  }
 }
